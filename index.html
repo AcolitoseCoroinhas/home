@@ -1,25 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download PDF</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pagina principal - C.S.G.G</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 65vh;
+            margin: 0;
+            background-color: rgb(231, 231, 231);
+        }
+
+        h1 {
+            color: rgb(0, 0, 0);
+            font-size: 40px;
+            margin: 0;
+            /* Remove espaçamento extra */
+        }
+
+        h2 {
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            margin: 10px 0;
+            /* Espaçamento entre os textos */
+        }
+
+        .logo {
+            height: 150px;
+            width: 150px;
+            border-radius: 5px;
+            position: absolute;
+            top: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+        }
+
+        label {
+            color: black;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute;
+            top: 320px;
+            left: 420px;
+        }
+
+        .div-folhetos {
+            height: 50px;
+            width: 350px;
+            background-color: rgb(233, 233, 233);
+            border: 1px solid rgb(65, 65, 65);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 380px;
+            left: 480px;
+        }
+
+        .text-folhetos {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .text-folhetos:hover {
+            color: darkgoldenrod;
+        }
+
+        .button-folhetos {
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            background-color: rgb(204, 204, 204);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            color: rgb(54, 54, 54);
+        }
+
+        .button-folhetos:hover {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        /*       */
+
+        .div-folhetos-1 {
+            height: 50px;
+            width: 350px;
+            background-color: rgb(233, 233, 233);
+            border: 1px solid rgb(65, 65, 65);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 450px;
+            left: 480px;
+        }
+
+        .text-folhetos-1 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .text-folhetos-1:hover {
+            color: darkgoldenrod;
+        }
+
+        .button-folhetos-1 {
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            background-color: rgb(204, 204, 204);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            color: rgb(54, 54, 54);
+        }
+
+        .button-folhetos-1:hover {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        /*       */
+
+        .div-folhetos-2 {
+            height: 50px;
+            width: 350px;
+            background-color: rgb(233, 233, 233);
+            border: 1px solid rgb(65, 65, 65);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 520px;
+            left: 480px;
+        }
+
+        .text-folhetos-2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .text-folhetos-2:hover {
+            color: darkgoldenrod;
+        }
+
+        .button-folhetos-2 {
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            background-color: rgb(204, 204, 204);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            color: rgb(54, 54, 54);
+        }
+
+        .button-folhetos-2:hover {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+         /*       */
+
+         .div-folhetos-3 {
+            height: 50px;
+            width: 350px;
+            background-color: rgb(233, 233, 233);
+            border: 1px solid rgb(65, 65, 65);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 590px;
+            left: 480px;
+        }
+
+        .text-folhetos-3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            cursor: pointer;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+        }
+
+        .text-folhetos-3:hover {
+            color: darkgoldenrod;
+        }
+
+        .button-folhetos-3 {
+            height: 50px;
+            width: 150px;
+            font-size: 20px;
+            background-color: rgb(204, 204, 204);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0px;
+            left: 200px;
+            color: rgb(54, 54, 54);
+        }
+
+        .button-folhetos-3:hover {
+            background-color: darkgoldenrod;
+            color: white;
+        }
+
+        label-2{
+            color: black;
+            font-size: 25px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            position: absolute;
+            top: 720px;
+            left: 460px;
+        }
+
+        /*     Escalas     */
+        
+        .div-janeiro{
+            height: 150px;
+            width: 200px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(221, 221, 221);
+            border: 1px solid rgb(71, 71, 71);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.753);
+            position: absolute;
+            top: 780px;
+            left: 40px;
+        }
+
+        .text-escala{
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 20px;
+            position: absolute;
+            left: 15px;
+            position: absolute;
+            top: 20px;
+        }
+        .button-escala{
+            height: 50px;
+            width: 200px;
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: rgb(122, 122, 122);
+            border: none;
+            cursor: pointer;
+            position: absolute;
+            top: 100px;
+            left: 0px;
+            color: rgb(245, 245, 245);
+        }
+        .button-escala:hover{
+            background-color: darkgoldenrod;
+            color: black;
+        }
+        .tam{
+            color: transparent;
+            position: absolute;
+            top: 1300px;
+        }
+    </style>
 </head>
+
 <body>
-    <div class="container">
-        <a href="pdfs/22-dez-2024-4º-d-advento.pdf" target="_blank" rel="noopener noreferrer">
-            <button id="download-btn">Download PDF</button>
-        </a>
+    <img src="imagens/logo.png" class="logo" alt="logo">
+    <h1>Paróquia Nossa Senhora Aparecida</h1>
+    <h2>Comunidade Santa Gemma Galgani</h2>
+    <label>Folheto Comunhão e Participação (mês)</label>
+    <div class="div-folhetos">
+        <h1 class="text-folhetos">05-jan-2025</h1>
+        <a href="" target="_blank" rel="noopener noreferrer"><button class="button-folhetos">Baixar folheto</button></a>
     </div>
-    <script>
-        document.getElementById('download-btn').addEventListener('click', (event) => {
-            event.preventDefault();
-            const pdfWindow = window.open('pdfs/22-dez-2024-4º-d-advento.pdf', '_blank');
-            if (!pdfWindow) {
-                alert('Permita pop-ups para abrir o PDF em uma nova aba.');
-            }
-        });
-    </script>
+    <div class="div-folhetos-1">
+        <h1 class="text-folhetos-1">12-jan-2025</h1>
+        <a href="" target="_blank" rel="noopener noreferrer"><button class="button-folhetos-1">Baixar folheto</button></a>
+    </div>
+    <div class="div-folhetos-2">
+        <h1 class="text-folhetos-2">19-jan-2025</h1>
+        <a href="" target="_blank" rel="noopener noreferrer"><button class="button-folhetos-2">Baixar folheto</button></a>
+    </div>
+    <div class="div-folhetos-3">
+        <h1 class="text-folhetos-3">26-jan-2025</h1>
+        <a href="" target="_blank" rel="noopener noreferrer"><button class="button-folhetos-3">Baixar folheto</button></a>
+    </div>
+    <label-2>Escala dos acólitos e coroinhas</label-2>
+    <div class="div-janeiro">
+        <h1 class="text-escala">Escala do mês de jan - 2025</h1>
+        <a href="" target="_blank" rel="noopener noreferrer"><button class="button-escala">Baixar escala</button></a>
+    </div>
+    <h1 class="tam">aaaaaaaa</h1>
 </body>
+
 </html>
