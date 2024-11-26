@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download PDF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="pdfs/22-dez-2024-4º-d-advento.pdf" target="_blank" rel="noopener noreferrer">
+            <button id="download-btn">Download PDF</button>
+        </a>
+    </div>
+    <script>
+        document.getElementById('download-btn').addEventListener('click', (event) => {
+            event.preventDefault();
+            const pdfWindow = window.open('pdfs/22-dez-2024-4º-d-advento.pdf', '_blank');
+            if (!pdfWindow) {
+                alert('Permita pop-ups para abrir o PDF em uma nova aba.');
+            }
+        });
+    </script>
+</body>
+</html>
