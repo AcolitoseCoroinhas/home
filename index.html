@@ -11,32 +11,33 @@
             overflow-x: hidden;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
             height: 100vh;
             margin: 0;
             background-color: rgb(56, 56, 56);
+            padding-top: 20px; /* Adiciona espaço no topo */
         }
-        
+
         h1 {
             color: rgb(255, 255, 255);
             font-size: 1.9em;
             margin: 0;
         }
-        
+
         h2 {
             color: rgb(255, 255, 255);
             font-size: 1.5em;
             margin: 10px 0;
         }
-        
-        label, label-2 {
+
+        p {
             color: rgb(255, 255, 255);
             font-size: 1.3em;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
+            margin: 10px 0;
         }
-        
+
         .div-folhetos, .div-folhetos-1, .div-folhetos-2, .div-folhetos-3, .div-folhetos-4 {
             height: 10vh;
             width: 390px;
@@ -51,35 +52,35 @@
             align-items: center;
             padding: 0 10px;
         }
-        
+
         .text-folhetos, .text-folhetos-1, .text-folhetos-2, .text-folhetos-3, .text-folhetos-4 {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             cursor: pointer;
             font-size: 1em;
             color: black;
         }
-        
+
         .text-folhetos:hover, .text-folhetos-1:hover, .text-folhetos-2:hover, .text-folhetos-3:hover,
         .text-folhetos-4:hover {
             color: darkgoldenrod;
         }
-        
+
         .button-folhetos, .button-folhetos-1, .button-folhetos-2, .button-folhetos-3, .button-folhetos-4 {
             height: 68px;
             width: 160px;
-            font-size: 1.2em; /* Ajusta o tamanho da fonte */
+            font-size: 1.2em;
             background-color: rgb(204, 204, 204);
             border: none;
             cursor: pointer;
             color: rgb(54, 54, 54);
             margin-left: auto;
         }
-        
+
         .button-folhetos:hover, .button-folhetos-1:hover, .button-folhetos-2:hover, .button-folhetos-3:hover, .button-folhetos-4:hover {
             background-color: darkgoldenrod;
             color: white;
         }
-        
+
         .div-janeiro {
             height: 150px;
             width: 350px;
@@ -94,7 +95,7 @@
             justify-content: center;
             align-items: center;
         }
-        
+
         .text-escala {
             color: rgb(0, 0, 0);
             font-family: 'Courier New', Courier, monospace;
@@ -102,7 +103,7 @@
             margin-bottom: 1vh;
             text-align: center;
         }
-        
+
         .button-escala {
             height: 6vh;
             width: 100%;
@@ -113,37 +114,35 @@
             cursor: pointer;
             color: rgb(245, 245, 245);
         }
-        
+
         .button-escala:hover {
             background-color: darkgoldenrod;
             color: black;
         }
-        
+
         @media (max-width: 768px) {
             h1, h2 {
                 font-size: 2em;
             }
-        
+
             .div-folhetos, .div-folhetos-1, .div-folhetos-2, .div-folhetos-3 {
                 height: 12vh;
                 width: 95%;
             }
-        
+
             .button-folhetos, .button-escala {
-                font-size: 1.2em; /* Aumenta o tamanho dos botões */
+                font-size: 1.2em;
             }
-        
+
             .div-janeiro {
-                height: 20vh; /* Aumenta a altura da div de janeiro */
+                height: 20vh;
             }
-        }        
-        
+        }
     </style>
 </head>
 <body>
-    <h2>P. Nossa Senhora Aparecida</h2><br>
-    <h2>Com. Santa Gemma Galgani</h2><br>
-    <label>Folheto Comunhão e Participação</label><br>
+    <h2>Paróquia Nossa Senhora Aparecida<br>Comunidade Santa Gemma Galgani</h2>
+    <p>Folheto Comunhão e Participação</p>
     <div class="div-folhetos">
         <h1 class="text-folhetos">01-dez-2024</h1>
         <a href="pdfs/01-dez-2024-1º-d-advento-05819558.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-01/12/2024" class="button-folhetos">Baixar folheto</button></a>
@@ -163,8 +162,8 @@
     <div class="div-folhetos-4">
         <h1 class="text-folhetos-4">29-dez-2024</h1>
         <a href="pdfs/29-dez-2024-sagrada-familia-00828564.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-29/12/2024" class="button-folhetos-4">Baixar folheto</button></a>
-    </div><br>
-    <label-2>Escala dos acólitos e coroinhas</label-2><br>
+    </div>
+    <p>Escala dos acólitos e coroinhas</p>
     <div class="div-janeiro">
         <h1 class="text-escala">Escala do mês de dez - 2024</h1>
         <a href="imagens/" target="_blank" rel="noopener noreferrer"><button id="download-folheto-01/12/2024" class="button-escala">Baixar escala</button></a>
