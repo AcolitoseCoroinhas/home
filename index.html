@@ -12,10 +12,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 130vh;
+            height: 180vh;
             margin: 0;
-            background-color: rgb(56, 56, 56);
+            background-color: rgb(155, 94, 179);
             padding-top: 20px;
+        }
+
+        .logo{
+            height: 150px;
+            width: 150px;
+            border-radius: 5px;
         }
 
         h1 {
@@ -75,7 +81,26 @@
             color: white;
         }
 
-        .div-janeiro {
+        @media (max-width: 768px) {
+            h1, h2 {
+                font-size: 2em;
+            }
+
+            .div-folhetos, .div-folhetos-1, .div-folhetos-2, .div-folhetos-3 {
+                height: 12vh;
+                width: 95%;
+            }
+
+            .button-folhetos, .button-escala {
+                font-size: 1.2em;
+            }
+
+            .div-dezembro {
+                height: 20vh;
+            }
+        }
+
+        .div-novembro {
             height: 150px;
             width: 350px;
             max-width: 500px;
@@ -91,7 +116,7 @@
             position: relative;
         }
 
-        .text-escala {
+        .text-escala-novembro {
             color: rgb(0, 0, 0);
             font-family: 'Courier New', Courier, monospace;
             font-size: 1em;
@@ -99,47 +124,74 @@
             text-align: center;
         }
 
-        .button-escala {
-            height: 9vh;
+        .button-escala-novembro {
+            height: 7vh;
             width: 100%;
             font-size: 1.1em;
-            background-color: rgb(180, 180, 180);
-            border: 2px solid rgb(131, 131, 131);
+            background-color: rgb(255, 255, 255);
+            border: 2px solid rgb(139, 139, 139);
             bottom: 10px;
             left: 5%;
             cursor: pointer;
-            color: rgb(54, 54, 54);
+            color: rgb(0, 0, 0);
             border-radius: 5px; 
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.644); 
         }        
 
-        .button-escala:hover {
-            background-color: darkgoldenrod;
-            color: black;
+        .button-escala-novembro:hover {
+            background-color: rgb(212, 212, 212);
+            border: 2px solid rgb(133, 133, 133);
+            color: rgb(0, 0, 0);
         }
 
-        @media (max-width: 768px) {
-            h1, h2 {
-                font-size: 2em;
-            }
+        .div-dezembro {
+            height: 150px;
+            width: 350px;
+            max-width: 500px;
+            margin: 2vh auto;
+            border-radius: 5px;
+            background-color: rgb(221, 221, 221);
+            border: 2px solid rgb(0, 0, 0);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.849);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
 
-            .div-folhetos, .div-folhetos-1, .div-folhetos-2, .div-folhetos-3 {
-                height: 12vh;
-                width: 95%;
-            }
+        .text-escala-dezembro {
+            color: rgb(0, 0, 0);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1em;
+            margin-bottom: 1vh;
+            text-align: center;
+        }
 
-            .button-folhetos, .button-escala {
-                font-size: 1.2em;
-            }
+        .button-escala-dezembro {
+            height: 7vh;
+            width: 100%;
+            font-size: 1.1em;
+            background-color: rgb(128, 9, 240);
+            border: 2px solid rgb(128, 9, 240);
+            bottom: 10px;
+            left: 5%;
+            cursor: pointer;
+            color: rgb(255, 255, 255);
+            border-radius: 5px; 
+            box-shadow: 0 4px 6px rgba(142, 2, 235, 0.644); 
+        }        
 
-            .div-janeiro {
-                height: 20vh;
-            }
+        .button-escala-dezembro:hover {
+            background-color: rgb(142, 71, 209);
+            border: 2px solid rgb(128, 9, 240);
+            color: rgb(255, 255, 255);
         }
         /* target="_blank" rel="noopener noreferrer"*/
     </style>
 </head>
 <body>
+    <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h1>Paróquia Nossa Senhora Aparecida</h1><br>
     <h3>Comunidade Santa Gemma Galgani</h3>
     <p>Folheto Comunhão e Participação</p>
@@ -154,7 +206,7 @@
     <div class="div-folhetos-2">
         <h1 class="text-folhetos-2">15-dez-2024</h1>
         <a href="pdfs/15-dez-2024-3º-d-advento-01824560.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-15/12/2024" class="button-folhetos-2">Baixar folheto</button></a>
-    </div>
+    </div> 
     <div class="div-folhetos-3">
         <h1 class="text-folhetos-3">22-dez-2024</h1>
         <a href="pdfs/22-dez-2024-4º-d-advento.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-22/12/2024" class="button-folhetos-3">Baixar folheto</button></a>
@@ -162,12 +214,20 @@
     <div class="div-folhetos-4">
         <h1 class="text-folhetos-4">29-dez-2024</h1>
         <a href="pdfs/29-dez-2024-sagrada-familia-00828564.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-29/12/2024" class="button-folhetos-4">Baixar folheto</button></a>
-    </div>
+    </div><br>
     <p>Escala dos acólitos e coroinhas</p>
-    <div class="div-janeiro">
-        <h1 class="text-escala">Escala: dezembro - 2024</h1>
+    <div class="div-novembro">
+        <br>
+        <h1 class="text-escala-novembro">Escala: Novembro - 2024</h1><br>
+        <a href="Escalas/escala_novembro.jpg" target="_blank" rel="noopener noreferrer">
+            <button id="download-escala-novembro" class="button-escala-novembro">Baixar escala</button>
+        </a>
+    </div><br>
+    <div class="div-dezembro">
+        <br>
+        <h1 class="text-escala-dezembro">Escala: Dezembro - 2024</h1><br>
         <a href="">
-            <button id="download-folheto-01/12/2024" class="button-escala" onclick="exibirAlerta()">Baixar escala</button>
+            <button id="download-escala-dezembro" class="button-escala-dezembro" onclick="exibirAlerta()">Baixar escala</button>
         </a>
     </div>
     <script>
