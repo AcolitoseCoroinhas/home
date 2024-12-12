@@ -22,6 +22,7 @@
             height: 150px;
             width: 150px;
             border-radius: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.856);
         }
 
         h3 {
@@ -54,25 +55,21 @@
         }        
 
         .text-folhetos, .text-folhetos-1, .text-folhetos-2, .text-folhetos-3, .text-folhetos-4 {
-            font-size: 1.2em; /* Tamanho igual para o texto */
-            line-height: 1.2em; /* Garante alinhamento */
+            font-size: 15px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 1.2em;
         }
 
         .button-folhetos, .button-folhetos-1, .button-folhetos-2, .button-folhetos-3, .button-folhetos-4 {
             height: 60px;
             width: 160px;
             font-size: 1.2em;
-            background-color: rgb(204, 204, 204);
+            background-color: rgb(117, 117, 117);
             border-radius: 5px;
             border: none;
             cursor: pointer;
-            color: rgb(54, 54, 54);
+            color: rgb(14, 14, 14);
             margin-left: auto;
-        }
-
-        .button-folhetos:hover, .button-folhetos-1:hover, .button-folhetos-2:hover, .button-folhetos-3:hover, .button-folhetos-4:hover {
-            background-color: rgb(88, 88, 88);
-            color: white;
         }
 
         @media (max-width: 768px) {
@@ -122,19 +119,14 @@
             height: 7vh;
             width: 100%;
             font-size: 1.1em;
-            background-color: rgb(204, 204, 204);
+            background-color: rgb(117, 117, 117);
             border-radius: 5px;
             border: none;
             bottom: 10px;
             left: 5%;
             cursor: pointer;
-            color: rgb(54, 54, 54);
+            color: rgb(14, 14, 14);
         }        
-
-        .button-escala-novembro:hover {
-            background-color: rgb(88, 88, 88);
-            color: rgb(255, 255, 255);
-        }
 
         .div-dezembro {
             height: 150px;
@@ -164,34 +156,23 @@
             height: 7vh;
             width: 100%;
             font-size: 1.1em;
-            background-color: rgb(204, 204, 204);
+            background-color: rgb(117, 117, 117);
             border: 2px solid rgb(139, 139, 139);
             border-radius: 5px;
             border: none;
-            color: rgb(54, 54, 54);
+            color: rgb(14, 14, 14);
             bottom: 10px;
             left: 5%;
             cursor: pointer; 
-        }        
-
-        .button-escala-dezembro:hover {
-            background-color: rgb(88, 88, 88);
-            color: rgb(255, 255, 255);
         }
         /* target="_blank" rel="noopener noreferrer"*/
-
-        .inscricoes{
-            height: 1000px;
-            width: 90%;
-            margin-top: 2%;
-        }
     </style>
 </head>
 <body>
     <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h3>Paróquia Nossa Senhora Aparecida</h3>
     <h3>Comunidade Santa Gemma Galgani</h3>
-    <p>Folheto Comunhão e Participação</p>
+    <p>Folhetos</p>
     <div class="div-folhetos">
         <h1 class="text-folhetos">01-dez-2024</h1>
         <a href="pdfs/01-dez-2024-1º-d-advento-05819558.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-01/12/2024" class="button-folhetos">Baixar folheto</button></a>
@@ -212,7 +193,15 @@
         <h1 class="text-folhetos-4">29-dez-2024</h1>
         <a href="pdfs/29-dez-2024-sagrada-familia-00828564.pdf" target="_blank" rel="noopener noreferrer"><button id="download-folheto-29/12/2024" class="button-folhetos-4">Baixar folheto</button></a>
     </div><br>
-    <p>Escala dos acólitos e coroinhas</p>
+    <p>Inscrições abertas</p>
+    <div class="div-novembro">
+        <br>
+        <h1 class="text-escala-novembro">Acólitos e coroinhas - 2025</h1><br>
+        <a href="imagens/inscricoesAeC.jpeg" target="_blank" rel="noopener noreferrer">
+            <button id="download-escala-novembro" class="button-escala-novembro">Saiba mais</button>
+        </a>
+    </div><br>
+    <p>Escalas</p>
     <div class="div-novembro">
         <br>
         <h1 class="text-escala-novembro">Novembro - 2024</h1><br>
@@ -227,7 +216,6 @@
             <button id="download-escala-dezembro" class="button-escala-dezembro">Baixar escala</button>
         </a>
     </div>
-    <img src="imagens/inscricoesAeC.jpeg" class="inscricoes" alt="inscricoes">
     <script>
         function exibirAlerta() {
                 alert("A escala não está disponivel.");
