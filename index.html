@@ -180,11 +180,11 @@
             left: 5%;
             cursor: pointer;
         }
-        
+
         .natal{
             height: 40px;
             width: 50px;
-            background-color: rgb(51, 51, 51);
+            background-color: rgb(194, 194, 194);
             border-radius: 5px;
             color: white;
             display: flex;
@@ -198,10 +198,27 @@
             transform: translateX(-50%);
             z-index: 2000;
         }
+
+        #tooltip2 {
+            visibility: hidden;
+            opacity: 0;
+            position: absolute;
+            background-color: rgba(102, 102, 102, 0.856);
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
+            color: #fff;
+            padding: 8px;
+            border-radius: 5px;
+            transition: opacity 0.3s ease;
+            font-size: 14px;
+            top: 40px;
+            left: 140px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="natal">🎄</div>
+    <div id="mensagem" class="natal">🎄</div>
+    <div id="tooltip2">Desejo a você e a sua<br>família um feliz natal!</div>
     <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h3>Paróquia Nossa Senhora Aparecida</h3>
     <h3>Comunidade Santa Gemma Galgani</h3>
@@ -254,8 +271,22 @@
             alert("A escala não está disponivel.");
         }
         function inscricaoEncerrada() {
-            alert("As incrições terminaram.");
+            alert("As inscrições terminaram.");
         }
+    </script>
+    <script>
+        const mensagemNatal = document.getElementById('mensagem');
+        const tooltip2 = document.getElementById('tooltip2');
+
+        mensagemNatal.addEventListener('click', () => {
+            if (tooltip2.style.visibility === 'visible') {
+                tooltip2.style.visibility = 'hidden';
+                tooltip2.style.opacity = '0';
+            } else {
+                tooltip2.style.visibility = 'visible';
+                tooltip2.style.opacity = '1';
+            }
+        });
     </script>
 </body>
 </html>
