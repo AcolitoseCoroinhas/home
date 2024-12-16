@@ -182,9 +182,8 @@
         }
 
         .natal{
-            height: 40px;
-            width: 50px;
-            background-color: rgb(194, 194, 194);
+            height: 50px;
+            width: 60px;
             border-radius: 5px;
             color: white;
             display: flex;
@@ -203,21 +202,20 @@
             visibility: hidden;
             opacity: 0;
             position: absolute;
-            background-color: rgba(102, 102, 102, 0.856);
+            background-color: rgb(102, 102, 102);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
             color: #fff;
             padding: 8px;
             border-radius: 5px;
             transition: opacity 0.3s ease;
             font-size: 14px;
-            top: 40px;
-            left: 140px;
+            top: 55px;
+            left: 70px;
         }
-
     </style>
 </head>
 <body>
-    <div id="mensagem" class="natal">🎄</div>
+    <img src="imagens/presente.webp" id="mensagem" class="natal" alt="">
     <div id="tooltip2">Desejo a você e a sua<br>família um feliz natal!</div>
     <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h3>Paróquia Nossa Senhora Aparecida</h3>
@@ -275,14 +273,19 @@
         }
     </script>
     <script>
+        // Selecionando os elementos
         const mensagemNatal = document.getElementById('mensagem');
         const tooltip2 = document.getElementById('tooltip2');
 
+        // Evento de clique no botão
         mensagemNatal.addEventListener('click', () => {
+            // Verifica se o tooltip está visível ou não
             if (tooltip2.style.visibility === 'visible') {
+                // Se estiver visível, esconde
                 tooltip2.style.visibility = 'hidden';
                 tooltip2.style.opacity = '0';
             } else {
+                // Se não estiver visível, mostra
                 tooltip2.style.visibility = 'visible';
                 tooltip2.style.opacity = '1';
             }
