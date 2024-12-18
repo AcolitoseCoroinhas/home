@@ -117,14 +117,14 @@
 
         .button-escala-novembro {
             height: 7vh;
-            width: 100%;
+            width: 160%;
+            margin-left: -33%;
             font-size: 1.1em;
             background-color: rgb(194, 194, 194);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
             border-radius: 5px;
             border: none;
             bottom: 10px;
-            left: 5%;
             cursor: pointer;
             color: rgb(14, 14, 14);
         }        
@@ -154,7 +154,8 @@
 
         .button-escala-dezembro {
             height: 7vh;
-            width: 100%;
+            width: 160%;
+            margin-left: -33%;
             font-size: 1.1em;
             background-color: rgb(194, 194, 194);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
@@ -162,14 +163,14 @@
             border: none;
             color: rgb(14, 14, 14);
             bottom: 10px;
-            left: 5%;
             cursor: pointer; 
         }
         /* target="_blank" rel="noopener noreferrer"*/
 
         .button-inscricao{
             height: 7vh;
-            width: 100%;
+            width: 160%;
+            margin-left: -33%;
             font-size: 1.1em;
             background-color: rgb(194, 194, 194);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
@@ -177,7 +178,6 @@
             border: none;
             color: rgb(14, 14, 14);
             bottom: 10px;
-            left: 5%;
             cursor: pointer;
         }
 
@@ -296,26 +296,21 @@
     </div>
     <script>
         function escalaNaoDisponivel() {
-            alert("A escala não está disponivel.");
+            alert("Escala ainda não disponivel.");
         }
         function inscricaoEncerrada() {
             alert("As inscrições terminaram.");
         }
     </script>
     <script>
-        // Selecionando os elementos
         const mensagemNatal = document.getElementById('mensagem');
         const tooltip2 = document.getElementById('tooltip2');
 
-        // Evento de clique no botão
         mensagemNatal.addEventListener('click', () => {
-            // Verifica se o tooltip está visível ou não
             if (tooltip2.style.visibility === 'visible') {
-                // Se estiver visível, esconde
                 tooltip2.style.visibility = 'hidden';
                 tooltip2.style.opacity = '0';
             } else {
-                // Se não estiver visível, mostra
                 tooltip2.style.visibility = 'visible';
                 tooltip2.style.opacity = '1';
             }
