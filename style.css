@@ -31,7 +31,6 @@ p {
     margin: 10px 0;
 }
 
-.div-folhetos-1,
 .div-folhetos-2,
 .div-folhetos-3,
 .div-folhetos-4,
@@ -48,7 +47,6 @@ p {
     padding: 0 10px;
 }
 
-.text-folhetos-1,
 .text-folhetos-2,
 .text-folhetos-3,
 .text-folhetos-4,
@@ -58,7 +56,6 @@ p {
     line-height: 1.2em;
 }
 
-.button-folhetos-1,
 .button-folhetos-2,
 .button-folhetos-3,
 .button-folhetos-4,
@@ -81,7 +78,6 @@ p {
         font-size: 2em;
     }
 
-    .div-folhetos-1,
     .div-folhetos-2,
     .div-folhetos-3,
     .div-folhetos-4,
