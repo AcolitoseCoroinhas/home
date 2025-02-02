@@ -11,7 +11,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 150vh;
+            height: 190vh;
             margin: 0;
             background-color: rgba(160, 160, 160, 0.911);
             padding-top: 20px;
@@ -81,7 +81,7 @@
             }
         }
         
-        .div-fevereiro,.div-janeiro {
+        .div-fevereiro,.div-janeiro , .div-investidura {
             height: 170px;
             width: 380px;
             max-width: 500px;
@@ -95,7 +95,7 @@
             position: relative;
         }
         
-        .text-escala-fevereiro,.text-escala-janeiro {
+        .text-escala-fevereiro,.text-escala-janeiro, .text-investidura {
             color: rgb(0, 0, 0);
             font-family: 'Courier New', Courier, monospace;
             font-size: 1.3em;
@@ -103,8 +103,8 @@
             text-align: center;
         }
         
-        .button-escala-fevereiro,.button-escala-janeiro {
-            height: 7vh;
+        .button-escala-fevereiro,.button-escala-janeiro, .button-investidura {
+            height: 8vh;
             width: 160%;
             margin-left: -33%;
             font-size: 1.1em;
@@ -144,20 +144,24 @@
     </div><br>
     <strong><p>Escalas</p></strong>
     <div class="div-janeiro">
-        <br>
         <h1 class="text-escala-janeiro">Janeiro - 2025</h1><br>
         <a href="escalas/escala_janeiro.jpg" target="_blank" rel="noopener noreferrer">
             <button id="download-escala-janeiro" class="button-escala-janeiro">Acessar</button>
         </a>
     </div><br>
     <div class="div-fevereiro">
-        <br>
         <h1 class="text-escala-fevereiro">Fevereiro - 2025</h1><br>
         <a href="escalas/escala_fevereiro.jpg" target="_blank" rel="noopener noreferrer">
             <button id="download-escala-fevereiro" class="button-escala-fevereiro">Acessar</button>
         </a>
     </div><br>
-
+    <strong><p>Formação</p></strong>
+    <div class="div-investidura">
+        <h1 class="text-investidura">Formação para investidura <br> de acólitos e coroinhas 2025</h1><br>
+        <a href="investidura2025/investiduraAcólitosECoroinhas2025.pdf" target="_blank" rel="noopener noreferrer">
+            <button id="download-investidura" class="button-investidura">Acessar</button>
+        </a><br>
+    </div><br>
     <script>
         function escalaNaoDisponivel() {
             alert("Escala ainda não disponível.");
