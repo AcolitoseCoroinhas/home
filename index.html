@@ -13,7 +13,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: 110vh;
             margin: 0;
             background-color: rgb(214, 214, 214);
             padding-top: 20px;
@@ -36,9 +36,9 @@
         .content {
             margin-top: 20px;
             padding: 20px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 10px;
-            background-color: white;
+            background-color: transparent;
             width: 80%;
             max-width: 600px;
             text-align: center;
@@ -56,7 +56,7 @@
             margin: 5px;
             padding: 10px 20px;
             font-size: 1em;
-            background-color: rgb(196, 196, 196);
+            background-color: transparent;
             color: rgb(0, 0, 0);
             border: none;
             border-radius: 5px;
@@ -208,7 +208,11 @@
             border-radius: 10px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
-        
+        hr {
+            height: 1px;
+            width: 90px;
+            background-color: rgb(0, 0, 0);
+        }
     </style>
 </head>
 
@@ -222,9 +226,18 @@
     <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h3>Comunidade Santa Gemma Galgani</h3>
     <div class="button-container">
-        <button class="Buttons" onclick="showContent('folhetos')">Folhetos</button>
-        <button class="Buttons" onclick="showContent('escalas')">Escalas</button>
-        <button class="Buttons" onclick="showContent('formacao')">Formação</button>
+        <button class="Buttons" onclick="showContent('folhetos')">
+            Folhetos
+            <hr>
+        </button>
+        <button class="Buttons" onclick="showContent('escalas')">
+            Escalas
+            <hr>
+        </button>
+        <button class="Buttons" onclick="showContent('formacao')">
+            Formação
+            <hr>
+        </button>
     </div>
     <div id="folhetosContent" class="content hidden">
         <strong>
