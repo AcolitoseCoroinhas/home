@@ -13,13 +13,13 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            height: 180vh;
+            height: 130vh;
             margin: 0;
-            background-color: rgba(170, 170, 170, 0.911);
+            background-color: rgb(214, 214, 214);
             padding-top: 20px;
         }
 
-         .logo {
+        .logo {
             height: 150px;
             width: 150px;
             border-radius: 50%;
@@ -27,14 +27,61 @@
         }
 
         h3 {
-            color: rgb(255, 255, 255);
+            color: rgba(0, 0, 0, 0.938);
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             font-size: 1.4em;
             margin: 10px 0;
         }
 
+        hr {
+            width: 33%;
+            height: 2px;
+            background-color: rgb(2, 2, 2);
+            border: none;
+            box-shadow: 2px 2px 2px rgb(0, 0, 0);
+        }
+
+        .content {
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+            width: 30%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .button-container {
+            display: flex; 
+        }
+
+        .Buttons {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: rgb(196, 196, 196);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+        }
+
+        .Buttons:hover {
+            margin: 5px;
+            padding: 10px 20px;
+            font-size: 1em;
+            background-color: rgb(156, 156, 156);
+            color: rgb(0, 0, 0);
+            border: none;
+            border-radius: 5px;
+        }
+
         p {
-            color: rgb(255, 255, 255);
+            color: rgb(2, 2, 2);
             font-size: 1.5em;
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             text-align: center;
@@ -48,9 +95,10 @@
         .div-folhetos-5,
         .div-folhetos-6 {
             height: 10vh;
-            width: 290px;
+            width: 340px;
             max-width: 500px;
             margin-bottom: 10px;
+            margin-left: 30px;
             border-radius: 5px;
             background-color: rgb(233, 233, 233);
             box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.856);
@@ -87,13 +135,8 @@
             border-radius: 5px;
             margin-left: auto;
         }
-        
-        @media (max-width: 768px) {
 
-            h1,
-            h2 {
-                font-size: 2em;
-            }
+        @media (max-width: 768px) {
 
             .div-folhetos-1,
             .div-folhetos-2,
@@ -105,9 +148,9 @@
                 width: 95%;
             }
         }
-
-        .div-fevereiro,
-        .div-marco {
+        
+        .div-escala-fevereiro,
+        .div-escala-marco {
             height: 170px;
             width: 320px;
             max-width: 500px;
@@ -173,6 +216,18 @@
             bottom: 10px;
             cursor: pointer;
         }
+
+        .default-image {
+            margin-top: 20px;
+            text-align: center;
+            width: 450px;
+        }
+        
+        .default-image img {
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
     </style>
 </head>
 
@@ -180,69 +235,108 @@
     <div id="customAlert" class="alert-modal">
         <div class="alert-content">
             <span id="closeAlertBtn" class="close-btn">&times;</span>
-            <p id="alertMessage">Ops❗, escala ainda não disponível</p>
+            <p id="alertMessage">Ops!<br>escala ainda não disponível</p>
         </div>
     </div>
     <img src="Logo/logo.jpg" class="logo" alt="logo"><br>
     <h3>Comunidade Santa Gemma Galgani</h3>
-    <strong>
-        <p>Folhetos</p>
-    </strong>
-    <div class="div-folhetos-1">
-        <h1 class="text-folhetos-1">02-mar-2025</h1>
-        <a href="folhetos/02-mar-2025-8º-d-t-c-05226574.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-1">Baixar </button></a>
+    <div class="button-container">
+        <button class="Buttons" onclick="showContent('folhetos')">Folhetos</button>
+        <button class="Buttons" onclick="showContent('escalas')">Escalas</button>
+        <button class="Buttons" onclick="showContent('formacao')">Formação</button>
     </div>
-    <div class="div-folhetos-2">
-        <h1 class="text-folhetos-2">05-mar-2025</h1>
-        <a href="folhetos/05-mar-2025-quarta-feira-de-cinzas-02125581.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-2">Baixar</button></a>
+    <hr>
+
+    <div id="folhetosContent" class="content hidden">
+        <strong>
+            <p>Folhetos</p>
+        </strong>
+        <div class="div-folhetos-1">
+            <h1 class="text-folhetos-1">02-mar-2025</h1>
+            <a href="folhetos/02-mar-2025-8º-d-t-c-05226574.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-1">Baixar </button></a>
+        </div>
+        <div class="div-folhetos-2">
+            <h1 class="text-folhetos-2">05-mar-2025</h1>
+            <a href="folhetos/05-mar-2025-quarta-feira-de-cinzas-02125581.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-2">Baixar</button></a>
+        </div>
+        <div class="div-folhetos-3">
+            <h1 class="text-folhetos-3">09-mar-2025</h1>
+            <a href="folhetos/09-mar-2025-1º-dom-quaresma-01328576.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-3">Baixar</button></a>
+        </div>
+        <div class="div-folhetos-4">
+            <h1 class="text-folhetos-4">16-mar-2025</h1>
+            <a href="folhetos/16-mar-2025-2º-dom-quaresma-03928577.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-4">Baixar</button></a>
+        </div>
+        <div class="div-folhetos-5">
+            <h1 class="text-folhetos-5">23-mar-2025</h1>
+            <a href="folhetos/23-mar-2025-3º-dom-quaresma-00929578.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-5">Baixar</button></a>
+        </div>
+        <div class="div-folhetos-6">
+            <h1 class="text-folhetos-6">30-mar-2025</h1>
+            <a href="folhetos/30-mar-2025-4º-dom-quaresma-03529579.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-folhetos-6">Baixar</button></a>
+        </div>
     </div>
-    <div class="div-folhetos-3">
-        <h1 class="text-folhetos-3">09-mar-2025</h1>
-        <a href="folhetos/09-mar-2025-1º-dom-quaresma-01328576.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-3">Baixar</button></a>
+
+    <div id="escalasContent" class="content hidden">
+        <strong>
+            <p>Escalas</p>
+        </strong>
+        <div class="div-escala-fevereiro">
+            <h1 class="text-escala-fevereiro">Fevereiro - 2025</h1><br>
+            <a href="escalas/escala_fevereiro.jpg" target="_blank" rel="noopener noreferrer">
+                <button class="button-escala-fevereiro">Acessar</button>
+            </a>
+        </div><br>
+        <div class="div-escala-marco">
+            <h1 class="text-escala-marco">Março - 2025</h1><br>
+            <a href="#">
+                <button class="button-escala-marco" id="showAlertBtn">Acessar</button>
+            </a>
+        </div>
     </div>
-    <div class="div-folhetos-4">
-        <h1 class="text-folhetos-4">16-mar-2025</h1>
-        <a href="folhetos/16-mar-2025-2º-dom-quaresma-03928577.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-4">Baixar</button></a>
+
+    <div id="formacaoContent" class="content hidden">
+        <strong>
+            <p>Formação</p>
+        </strong>
+        <div class="div-investidura">
+            <h1 class="text-investidura">Formação para investidura <br> de acólitos e coroinhas 2025</h1><br>
+            <a href="investidura2025/investiduraAcólitosECoroinhas2025.pdf" target="_blank" rel="noopener noreferrer">
+                <button class="button-investidura">Acessar</button>
+            </a><br>
+        </div><br>
     </div>
-    <div class="div-folhetos-5">
-        <h1 class="text-folhetos-5">23-mar-2025</h1>
-        <a href="folhetos/23-mar-2025-3º-dom-quaresma-00929578.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-5">Baixar</button></a>
+
+    <div id="defaultImage" class="default-image">
+        <img src="imagens/quaresma.jpg" alt="Imagem padrão" style="width: 100%; max-width: 600px;"> 
+        <h1>
+            É um tempo de reflexão, arrependimento <br> e renovação espiritual
+        </h1>
     </div>
-    <div class="div-folhetos-6">
-        <h1 class="text-folhetos-6">30-mar-2025</h1>
-        <a href="folhetos/30-mar-2025-4º-dom-quaresma-03529579.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-folhetos-6">Baixar</button></a>
-    </div><br>
-    <strong>
-        <p>Escalas</p>
-    </strong>
-    <div class="div-fevereiro">
-        <h1 class="text-escala-fevereiro">Fevereiro - 2025</h1><br>
-        <a href="escalas/escala_fevereiro.jpg" target="_blank" rel="noopener noreferrer">
-            <button class="button-escala-fevereiro">Acessar</button>
-        </a>
-    </div><br>
-    <div class="div-marco">
-        <h1 class="text-escala-marco">Março - 2025</h1><br>
-        <a href="#">
-            <button class="button-escala-marco" id="showAlertBtn">Acessar</button>
-        </a>
-    </div><br>
-    <strong>
-        <p>Formação</p>
-    </strong>
-    <div class="div-investidura">
-        <h1 class="text-investidura">Formação para investidura <br> de acólitos e coroinhas 2025</h1><br>
-        <a href="investidura2025/investiduraAcólitosECoroinhas2025.pdf" target="_blank" rel="noopener noreferrer">
-            <button class="button-investidura">Acessar</button>
-        </a><br>
-    </div><br>
     <script src="script.js"></script>
+    <script>
+        function showContent(contentId) {
+            const content = document.getElementById(contentId + 'Content');
+            const defaultImage = document.getElementById('defaultImage');
+    
+            if (!content.classList.contains('hidden')) {
+                content.classList.add('hidden');
+                defaultImage.style.display = 'block'; 
+            } else {
+                document.querySelectorAll('.content').forEach(content => {
+                    content.classList.add('hidden');
+                });
+                defaultImage.style.display = 'none'; 
+                content.classList.remove('hidden'); 
+            }
+        }
+    </script>
 </body>
 
 </html>
