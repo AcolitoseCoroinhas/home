@@ -316,16 +316,18 @@
         function showContent(contentId) {
             const content = document.getElementById(contentId + 'Content');
             const defaultImage = document.getElementById('defaultImage');
-    
+        
             if (!content.classList.contains('hidden')) {
                 content.classList.add('hidden');
-                defaultImage.style.display = 'block'; 
+                defaultImage.style.display = 'block';
+                document.body.style.height = 'auto';
             } else {
                 document.querySelectorAll('.content').forEach(content => {
                     content.classList.add('hidden');
                 });
-                defaultImage.style.display = 'none'; 
-                content.classList.remove('hidden'); 
+                defaultImage.style.display = 'none';
+                content.classList.remove('hidden');
+                document.body.style.height = `${content.scrollHeight + 200}px`;
             }
         }
     </script>
