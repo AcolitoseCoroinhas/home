@@ -236,16 +236,18 @@
             top: 0;
             width: 100%;
             height: 100%;
-            overflow-y: hidden;
+            overflow: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .modal-content {
             display: block;
-            margin: 5% auto;
             max-width: 90%;
             max-height: 90%;
-            top: 20px;
             border-radius: 10px;
+            margin: auto;
         }
 
         .close-modal {
@@ -426,7 +428,7 @@
         });
 
         document.querySelector('.button-escala-fevereiro').addEventListener('click', (event) => {
-            event.preventDefault(); 
+            event.preventDefault();
             openModal('escalas/escala_fevereiro.jpg');
         });
     </script>
