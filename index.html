@@ -49,7 +49,7 @@
         }
 
         .button-container {
-            display: flex; 
+            display: flex;
         }
 
         .Buttons {
@@ -60,6 +60,11 @@
             color: rgb(255, 255, 255);
             border: none;
             border-radius: 5px;
+        }
+
+        .active-Buttons {
+            border: black;
+            background-color: rgba(0, 0, 0, 0.918);
         }
 
         p {
@@ -76,7 +81,7 @@
         .div-folhetos-4,
         .div-folhetos-5,
         .div-folhetos-6 {
-            height: 8vh;
+            height: 7vh;
             width: 340px;
             max-width: 500px;
             margin-bottom: 10px;
@@ -128,7 +133,7 @@
                 width: 95%;
             }
         }
-        
+
         .div-escala-fevereiro,
         .div-escala-marco {
             height: 170px;
@@ -201,16 +206,24 @@
             text-align: center;
             width: 390px;
         }
-        
+
         .default-image img {
             border-radius: 10px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
+
         hr {
-            height: 1px;
+            height: 1.5px;
             width: 90px;
             background-color: rgb(255, 255, 255);
+            border: rgb(255, 255, 255);
         }
+
+        .active-hr {
+            border: black;
+            background-color: rgba(0, 0, 0, 0.918);
+        }
+
         .h1 {
             color: rgb(252, 252, 252);
         }
@@ -251,7 +264,8 @@
         </div>
         <div class="div-folhetos-2">
             <h1 class="text-folhetos-2">05-mar-2025</h1>
-            <a href="folhetos/05-mar-2025-quarta-feira-de-cinzas-02125581.pdf" target="_blank" rel="noopener noreferrer">
+            <a href="folhetos/05-mar-2025-quarta-feira-de-cinzas-02125581.pdf" target="_blank"
+                rel="noopener noreferrer">
                 <button class="button-folhetos-2">Baixar</button></a>
         </div>
         <div class="div-folhetos-3">
@@ -307,7 +321,7 @@
     </div>
 
     <div id="defaultImage" class="default-image">
-        <img src="imagens/quaresma.jpg" alt="Imagem padrão" style="width: 100%; max-width: 600px;"> 
+        <img src="imagens/quaresma.jpg" alt="Imagem padrão" style="width: 100%; max-width: 600px;">
         <h1 class="h1">
             É um tempo de reflexão, arrependimento <br> e renovação espiritual
         </h1>
@@ -317,6 +331,11 @@
         function showContent(contentId) {
             const content = document.getElementById(contentId + 'Content');
             const defaultImage = document.getElementById('defaultImage');
+            const buttons = document.querySelectorAll('.Buttons');
+
+            buttons.forEach(button => {
+                button.querySelector('hr').classList.remove('active-hr');
+            });
 
             if (!content.classList.contains('hidden')) {
                 content.classList.add('hidden');
@@ -331,6 +350,8 @@
                 content.classList.remove('hidden');
                 document.body.style.height = `${content.scrollHeight + 200}px`;
                 localStorage.setItem('activeContent', contentId);
+                const activeButton = document.querySelector(`.Buttons[onclick="showContent('${contentId}')"]`);
+                activeButton.querySelector('hr').classList.add('active-hr');
             }
         }
         window.onload = function () {
