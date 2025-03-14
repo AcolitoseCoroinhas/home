@@ -51,7 +51,7 @@
 
         .button-container {
             height: 70px;
-            background-color: #b3b3b3;
+            background-color: transparent;
             display: flex;
         }
 
@@ -60,7 +60,7 @@
             padding: 10px 20px;
             font-size: 1.1em;
             background-color: transparent;
-            color: rgba(245, 245, 245, 0.932);
+            color: rgba(0, 0, 0, 0.932);
             border: none;
             border-radius: 5px;
         }
@@ -205,19 +205,19 @@
         hr {
             height: 1.5px;
             width: 90px;
-            background-color: rgb(252, 252, 252);
-            border: rgb(247, 247, 247);
+            background-color: black;
+            border: none;
+            transition: background-color 0.3s;
         }
 
         .active-hr {
-            border: rgb(0, 0, 0);
-            background-color: rgba(0, 0, 0, 0.918);
+            border: rgb(162, 0, 255, 0.932);
+            background-color: rgba(162, 0, 255, 0.932);
         }
 
         .h1 {
             color: rgb(0, 0, 0);
         }
-
     </style>
 </head>
 
@@ -235,10 +235,12 @@
             Folhetos
             <hr>
         </button>
+        <p>|</p>
         <button class="Buttons" onclick="showContent('escalas')">
             Escalas
             <hr>
         </button>
+        <p>|</p>
         <button class="Buttons" onclick="showContent('formacao')">
             Formação
             <hr>
@@ -299,7 +301,7 @@
                 <button class="button-escala-marco">
                     Acessar
                 </button>
-            <!--
+                <!--
                 <button class="button-escala-marco" id="showAlertBtn">
                     Acessar
                 </button>
