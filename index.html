@@ -1,227 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/santagemma.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <title>Comunidade Santa Gemma Galgani - acólitos e coroinhas</title>
-    <style>
-        body {
-            overflow-x: hidden;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: rgb(255, 255, 255);
-            padding-top: 20px;
-        }
-
-        .logo {
-            height: 150px;
-            width: 150px;
-            border-radius: 50%;
-            border: 1px solid rgb(70, 70, 70);
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.856);
-        }
-
-        h3 {
-            color: rgba(94, 94, 94, 0.89);
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1.4em;
-            margin: 10px 0;
-        }
-
-        .content {
-            margin-top: 5px;
-            padding: 20px;
-            border: none;
-            border-radius: 10px;
-            background-color: transparent;
-            width: 80%;
-            max-width: 600px;
-            text-align: center;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        .button-container {
-            height: 70px;
-            background-color: transparent;
-            display: flex;
-        }
-
-        .Buttons {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 1.1em;
-            background-color: transparent;
-            color: rgba(46, 46, 46, 0.932);
-            border: none;
-            border-radius: 5px;
-        }
-
-        .active-Buttons {
-            border: black;
-            background-color: rgba(0, 0, 0, 0.918);
-        }
-
-        p {
-            color: rgba(97, 97, 97, 0.938);
-            font-size: 1.5em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            text-align: center;
-            margin: 10px 0;
-        }
-
-        .div-folhetos-1,
-        .div-folhetos-2,
-        .div-folhetos-3,
-        .div-folhetos-4,
-        .div-folhetos-5,
-        .div-folhetos-6 {
-            height: 7vh;
-            width: 330px;
-            max-width: 500px;
-            margin-bottom: 10px;
-            border-radius: 5px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgb(196, 196, 196);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 10px;
-        }
-
-        .text-folhetos-1,
-        .text-folhetos-2,
-        .text-folhetos-3,
-        .text-folhetos-4,
-        .text-folhetos-5,
-        .text-folhetos-6 {
-            font-size: 17px;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            line-height: 1.2em;
-        }
-
-        .button-folhetos-1,
-        .button-folhetos-2,
-        .button-folhetos-3,
-        .button-folhetos-4,
-        .button-folhetos-5,
-        .button-folhetos-6 {
-            height: 60px;
-            width: 150px;
-            font-size: 1.2em;
-            background-color: rgb(214, 214, 214);
-            border: none;
-            cursor: pointer;
-            color: #000000e1;
-            border-radius: 5px;
-            margin-left: 9%;
-        }
-
-        @media (max-width: 768px) {
-
-            .div-folhetos-1,
-            .div-folhetos-2,
-            .div-folhetos-3,
-            .div-folhetos-4,
-            .div-folhetos-5,
-            .div-folhetos-6 {
-                width: 95%;
-            }
-        }
-
-        .div-escala-fevereiro,
-        .div-escala-marco,
-        .div-investidura {
-            height: 170px;
-            width: 320px;
-            max-width: 500px;
-            margin: 1vh auto;
-            border-radius: 5px;
-            background-color: rgb(255, 255, 255);
-            border: 1px solid rgba(88, 88, 88, 0.952);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .text-escala-fevereiro,
-        .text-escala-marco,
-        .text-investidura {
-            color: rgb(0, 0, 0);
-            font-family: 'Courier New', Courier, monospace;
-            font-size: 1.3em;
-            margin-bottom: 1vh;
-            text-align: center;
-        }
-
-        .button-escala-fevereiro,
-        .button-escala-marco {
-            height: 50px;
-            width: 150%;
-            margin-left: -33%;
-            border-radius: 5px;
-            font-size: 1.1em;
-            background-color: rgb(214, 214, 214);
-            border: none;
-            color: #000000e1;
-            bottom: 10px;
-            cursor: pointer;
-        }
-
-        .button-investidura {
-            height: 40px;
-            width: 150%;
-            margin-left: -33%;
-            border-radius: 5px;
-            font-size: 1.1em;
-            background-color: rgb(214, 214, 214);
-            border: none;
-            color: #000000e1;
-            bottom: 10px;
-            cursor: pointer;
-        }
-
-        .default-image {
-            margin-top: 5px;
-            text-align: center;
-            width: 390px;
-        }
-
-        .default-image img {
-            border-radius: 10px;
-            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-        }
-
-        hr {
-            height: 2px;
-            width: 90px;
-            background-color: black;
-            border: none;
-            transition: background-color 0.3s;
-        }
-
-        .active-hr {
-            border: rgb(162, 0, 255, 0.932);
-            background-color: rgba(162, 0, 255, 0.932);
-        }
-
-        .h1 {
-            font-size: 23px;
-            color: rgb(49, 49, 49);
-        }
-    </style>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Comunidade Santa Gemma Galgani</title>
 </head>
-
 <body>
     <div id="customAlert" class="alert-modal">
         <div class="alert-content">
@@ -230,7 +16,7 @@
         </div>
     </div>
     <img src="logo/logo.jpg" class="logo" alt="logo"><br>
-    <h3>Comunidade Santa Gemma Galgani</h3>
+    <h3>Acólitos e Coroinhas</h3>
     <div class="button-container">
         <button class="Buttons" onclick="showContent('folhetos')">
             Folhetos
@@ -241,8 +27,12 @@
             Escalas
             <hr>
         </button>
+        <p>|</p>
+        <button class="Buttons" onclick="showContent('oracao')">
+            Oração
+            <hr>
+        </button>
     </div>
-
     <div id="folhetosContent" class="content hidden">
         <strong>
             <p>Folhetos</p>
@@ -254,8 +44,7 @@
         </div>
         <div class="div-folhetos-2">
             <h1 class="text-folhetos-2">05-mar-2025</h1>
-            <a href="folhetos/05-mar-2025.pdf" target="_blank"
-                rel="noopener noreferrer">
+            <a href="folhetos/05-mar-2025.pdf" target="_blank" rel="noopener noreferrer">
                 <button class="button-folhetos-2">Baixar</button></a>
         </div>
         <div class="div-folhetos-3">
@@ -279,7 +68,6 @@
                 <button class="button-folhetos-6">Baixar</button></a>
         </div>
     </div>
-
     <div id="escalasContent" class="content hidden">
         <strong>
             <p>Escalas</p>
@@ -298,82 +86,24 @@
                 <button class="button-escala-marco">
                     Acessar
                 </button>
-                <!--
-                <button class="button-escala-marco" id="showAlertBtn">
-                    Acessar
-                </button>
-            -->
+                <!-- <button class="button-escala-marco" id="showAlertBtn">Acessar</button> -->
             </a>
         </div>
     </div>
     <div id="defaultImage" class="default-image">
         <img src="imagens/quaresma.jpg" alt="Imagem padrão" style="width: 100%; max-width: 600px;">
-        <h1 class="h1">
-            É um tempo de reflexão, arrependimento <br> e renovação espiritual
-        </h1>
     </div>
-    <script src="script.js"></script>
-    <script>
-        function showContent(contentId) {
-            const content = document.getElementById(contentId + 'Content');
-            const defaultImage = document.getElementById('defaultImage');
-            const buttons = document.querySelectorAll('.Buttons');
-
-            buttons.forEach(button => {
-                button.querySelector('hr').classList.remove('active-hr');
-            });
-
-            if (!content.classList.contains('hidden')) {
-                content.classList.add('hidden');
-                defaultImage.style.display = 'block';
-                document.body.style.height = 'auto';
-                localStorage.removeItem('activeContent');
-            } else {
-                document.querySelectorAll('.content').forEach(content => {
-                    content.classList.add('hidden');
-                });
-                defaultImage.style.display = 'none';
-                content.classList.remove('hidden');
-                document.body.style.height = `${content.scrollHeight + 200}px`;
-                localStorage.setItem('activeContent', contentId);
-                const activeButton = document.querySelector(`.Buttons[onclick="showContent('${contentId}')"]`);
-                activeButton.querySelector('hr').classList.add('active-hr');
-            }
-        }
-        window.onload = function () {
-            const activeContent = localStorage.getItem('activeContent');
-            if (activeContent) {
-                showContent(activeContent);
-            }
-        };
-    </script>
-    <script>
-        function openModal(imageSrc) {
-            const modal = document.getElementById('escalaModal');
-            const modalImage = document.getElementById('modalImage');
-            modal.style.display = 'block';
-            modalImage.src = imageSrc;
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('escalaModal');
-            modal.style.display = 'none';
-        }
-
-        document.querySelector('.close-modal').addEventListener('click', closeModal);
-
-        window.addEventListener('click', (event) => {
-            const modal = document.getElementById('escalaModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        });
-
-        document.querySelector('.button-escala-fevereiro').addEventListener('click', (event) => {
-            event.preventDefault();
-            openModal('escalas/escala_fevereiro.jpg');
-        });
-    </script>
+    <div id="oracaoContent" class="content hidden">
+        <div class="oracao">
+            <img src="imagens/oracao.avif" alt="">
+            <Label>Oração de São Tarcísio</Label>
+            <p>
+                Ó glorioso São Tarcísio, que agora no céu estais a gozando o prêmio do vosso amor verdadeiro a Deus, de fidelidade e proteção constante à Santa Eucaristia. Abençoai nossas famílias e os devotos, que buscam em Ti o Amor e a Coragem de lutar por Jesus Cristo. Quero, neste dia, seguir sua bravura, sentindo em meu coração a Santa Eucaristia, seguindo a Jesus Cristo, amando e respeitando o serviço de sua Igreja, o Magistériode nossa Fé. Livrai-me da maldade e de tudo o que pode me separar de Deus, do próximo e da salvação eterna. Concedei-me a graça que desejo alcançar. Graças e louvores se dê a cada momento, ao Digníssimo Santíssimo Sacramento.
+            </p>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/openModal.js"></script>
+    <script src="scripts/showContent.js"></script>
 </body>
-
 </html>
