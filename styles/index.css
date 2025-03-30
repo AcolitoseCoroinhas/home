@@ -206,36 +206,43 @@ hr {
 .oracao {
     position: relative;
     border: 2px solid black;
-    height: 340px;
-    width: 100%;
+    height: auto;
+    min-height: 340px;
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px 0;
+    box-sizing: border-box;
 }
 
 .oracao p {
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     color: rgb(0, 0, 0);
     font-size: 15px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     white-space: pre-line;
-    width: 80%;
+    width: 90%;
+    margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
 }
 
 .oracao label {
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
     color: rgb(44, 44, 44);
     font-size: 20px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     white-space: pre-line;
-    width: 80%;
-    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
     border-radius: 10px;
+    display: block;
 }
