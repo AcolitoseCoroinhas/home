@@ -205,12 +205,14 @@ hr {
 
 .oracao {
     position: relative;
+    border: 2px solid black;
+    height: 240px;
     width: 100%;
 }
 
 .oracao p {
     position: absolute;
-    top: 50%;
+    top: 120px;
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
