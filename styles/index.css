@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
+    height: 100%;
     background-color: rgb(255, 255, 255);
     padding-top: 20px;
 }
@@ -11,16 +12,28 @@ body {
 .logo {
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    border: 1px solid rgb(70, 70, 70);
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.856);
+    border-radius: 40%;
+    border: 1px solid black;
 }
-
 h3 {
     color: rgba(94, 94, 94, 0.89);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.4em;
     margin: 10px 0;
+}
+
+h2 {
+    color: rgba(94, 94, 94, 0.89);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+h2-1 {
+    color: rgba(94, 94, 94, 0.89);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    margin: 10px 0; 
 }
 
 .content {
