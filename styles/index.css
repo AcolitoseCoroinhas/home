@@ -144,7 +144,9 @@ p {
     .div-folhetos-5,
     .div-folhetos-6 {
         width: 95%;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         height: 50px;
         padding: 10px;
     }
@@ -155,9 +157,9 @@ p {
     .button-folhetos-4,
     .button-folhetos-5,
     .button-folhetos-6 {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100%;
+        margin-left: auto;
+        margin-top: 0;
+        width: auto;
     }
 
 }
