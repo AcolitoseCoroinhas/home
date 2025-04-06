@@ -274,10 +274,7 @@ hr {
 .message {
     background-color: rgb(247, 247, 247);
     border: 1px solid rgba(88, 88, 88, 0.952);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     border-radius: 5px;
-    width: 100%;
+    width: 90%;
 }
