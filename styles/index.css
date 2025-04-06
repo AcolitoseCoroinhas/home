@@ -145,7 +145,7 @@ p {
     .div-folhetos-6 {
         width: 95%;
         flex-direction: column;
-        height: auto;
+        height: 50px;
         padding: 10px;
     }
 
