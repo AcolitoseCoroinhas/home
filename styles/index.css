@@ -147,22 +147,8 @@ p {
     .div-folhetos-5,
     .div-folhetos-6 {
         width: 95%;
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
     }
-
-    .button-folhetos-1,
-    .button-folhetos-2,
-    .button-folhetos-3,
-    .button-folhetos-4,
-    .button-folhetos-5,
-    .button-folhetos-6 {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 100px;
-    }
-
+    
 }
 
 .div-escala-marco,
