@@ -284,3 +284,9 @@ hr {
     border-radius: 10px;
     border: 1px solid #ccc;
 }
+
+.h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
