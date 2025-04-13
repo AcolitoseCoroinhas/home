@@ -6,6 +6,7 @@ body {
     margin: 0;
     background-color: rgb(255, 255, 255);
     padding-top: 20px;
+    margin-bottom: 20px;
 }
 
 .logo {
@@ -52,6 +53,7 @@ h2-1 {
 }
 
 .button-container {
+    margin-left: 2px;
     height: 70px;
     background-color: transparent;
     display: flex;
