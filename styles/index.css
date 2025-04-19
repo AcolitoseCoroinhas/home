@@ -151,6 +151,14 @@ p {
         width: 95%;
     }
 
+    .button-folhetos-1,
+    .button-folhetos-2,
+    .button-folhetos-3,
+    .button-folhetos-4,
+    .button-folhetos-5,
+    .button-folhetos-6 {
+        height: 50px;
+    }
 }
 
 .div-escala-marco,
