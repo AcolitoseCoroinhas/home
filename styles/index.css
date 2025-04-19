@@ -53,6 +53,7 @@ h2-1 {
 }
 
 .button-container {
+    margin-left: 25px;
     height: 70px;
     background-color: transparent;
     display: flex;
@@ -110,6 +111,7 @@ p {
     padding: 0 10px;
 }
 
+
 .text-folhetos-1,
 .text-folhetos-2,
 .text-folhetos-3,
@@ -127,7 +129,7 @@ p {
 .button-folhetos-4,
 .button-folhetos-5,
 .button-folhetos-6 {
-    height: 60px;
+    height: 50px;
     width: 150px;
     font-size: 1.2em;
     background-color: rgb(214, 214, 214);
@@ -148,7 +150,7 @@ p {
     .div-folhetos-6 {
         width: 95%;
     }
-    
+
 }
 
 .div-escala-marco,
