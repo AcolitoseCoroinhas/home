@@ -194,10 +194,9 @@ p {
     line-height: 1.2em;
 }
 
-
 .button-escala-marco,
 .button-escala-abril {
-    height: 50px;
+    height: 65px;
     width: 150px;
     font-size: 1.2em;
     background-color: #c5ae2e;
@@ -207,6 +206,7 @@ p {
     border-radius: 5px;
     margin-left: 9%;
 }
+
 
 .button-investidura {
     height: 40px;
