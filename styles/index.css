@@ -165,11 +165,6 @@ p {
     .div-escala-abril {
         width: 95%;
     }
-
-    .button-escala-marco,
-    .button-escala-abril {
-        height: 70px;
-    }
 }
 
 .escalas-container {
