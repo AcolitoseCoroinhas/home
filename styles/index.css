@@ -172,7 +172,6 @@ p {
     margin-left: 10px;
 }
 
-.div-escala-abril,
 .div-escala-maio {
     height: 7vh;
     width: 330px;
@@ -187,14 +186,12 @@ p {
     padding: 0 10px;
 }
 
-.text-escala-abril,
 .text-escala-maio {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
 }
 
-.button-escala-abril,
 .button-escala-maio {
     height: 62px;
     width: 150px;
@@ -271,7 +268,7 @@ hr {
 }
 
 .img img {
-    width: 300px;
+    width: 350px;
     height: auto;
     border-radius: 10px;
     border: 1px solid #ccc;
