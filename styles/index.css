@@ -172,7 +172,7 @@ p {
     margin-left: 10px;
 }
 
-.div-escala-maio {
+.div-escala-junho {
     height: 7vh;
     width: 330px;
     max-width: 500px;
@@ -186,13 +186,13 @@ p {
     padding: 0 10px;
 }
 
-.text-escala-maio {
+.text-escala-junho {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
 }
 
-.button-escala-maio {
+.button-escala-junho {
     height: 62px;
     width: 150px;
     font-size: 1.2em;
