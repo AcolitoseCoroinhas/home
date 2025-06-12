@@ -209,11 +209,10 @@ hr {
 }
 
 .img img {
-    width: 350px;
+    width: 380px;
     height: auto;
     border-radius: 10px;
     border: 1px solid #ccc;
-    box-shadow: 0 0 10px 5px #ff0000;
 }
 
 .h2 {
@@ -222,7 +221,6 @@ hr {
     align-items: center;
 }
 
-.frente,
 .verso {
     display: block;
     margin-left: auto;
