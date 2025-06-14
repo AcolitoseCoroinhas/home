@@ -65,7 +65,7 @@ h2-1 {
     font-size: 1.2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: rgb(255, 0, 0);
+    color: rgb(23, 169, 253);
     border: none;
     border-radius: 5px;
 }
@@ -76,7 +76,7 @@ h2-1 {
 }
 
 p {
-    color: rgb(255, 0, 0);
+    color: rgb(23, 169, 253);
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -100,7 +100,8 @@ p {
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(196, 196, 196);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -112,13 +113,14 @@ p {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
+    color: rgb(0, 0, 0);
 }
 
 .button-folhetos {
     height: 50px;
     width: 150px;
     font-size: 1.2em;
-    background-color: #ff1616;
+    background-color: #fd2b2b;
     border: none;
     cursor: pointer;
     color: #ffffffe1;
@@ -163,7 +165,8 @@ p {
     margin-bottom: 1px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(196, 196, 196);
+    border: 1px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -174,16 +177,17 @@ p {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
+    color: rgb(0, 0, 0);
 }
 
 .button-escala-junho {
-    height: 62px;
+    height: 50px;
     width: 150px;
     font-size: 1.2em;
-    background-color: #ff1616;
+    background-color: #fd2b2b;
     border: none;
     cursor: pointer;
-    color: #f7f7f7e1;
+    color: #ffffffe1;
     border-radius: 5px;
     margin-left: 9%;
 }
@@ -197,8 +201,8 @@ hr {
 }
 
 .active-hr {
-    border: #ff0000;
-    background-color: #ff0000;
+    border: rgb(23, 169, 253);
+    background-color: rgb(23, 169, 253);
 }
 
 .img {
