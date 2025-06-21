@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0;
-    background-color: rgb(236, 236, 236);
+    background-color: rgb(255, 255, 255);
     padding-top: 20px;
     margin-bottom: 20px;
 }
@@ -62,21 +62,21 @@ h2-1 {
 .Buttons {
     margin: 5px;
     padding: 10px 20px;
-    font-size: 1.2em;
+    font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: rgb(23, 169, 253);
+    color: rgb(151, 25, 255);
     border: none;
     border-radius: 5px;
 }
 
 .active-Buttons {
-    border: black;
-    background-color: rgba(0, 0, 0, 0.918);
+    border: rgb(151, 25, 255);
+    background-color: rgb(151, 25, 255);
 }
 
 p {
-    color: rgb(23, 169, 253);
+    color: rgb(151, 25, 255);
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -99,9 +99,9 @@ p {
     max-width: 500px;
     margin-bottom: 10px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgb(199, 199, 199);
+    border: 1px solid rgb(199, 199, 199);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.774);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,10 +120,10 @@ p {
     height: 50px;
     width: 150px;
     font-size: 1.2em;
-    background-color: #fd2b2b;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
-    color: #ffffffe1;
+    color: rgb(151, 25, 255);
     border-radius: 5px;
     margin-left: 9%;
 }
@@ -164,9 +164,9 @@ p {
     max-width: 500px;
     margin-bottom: 1px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(255, 255, 255);
-    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.3);
+    background-color: rgb(199, 199, 199);
+    border: 1px solid rgb(199, 199, 199);
+    box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.774);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,10 +184,10 @@ p {
     height: 60px;
     width: 150px;
     font-size: 1.2em;
-    background-color: #fd2b2b;
+    background-color: #ffffff;
     border: none;
     cursor: pointer;
-    color: #ffffffe1;
+    color: rgb(151, 25, 255);
     border-radius: 5px;
     margin-left: 9%;
 }
@@ -201,8 +201,8 @@ hr {
 }
 
 .active-hr {
-    border: rgb(23, 169, 253);
-    background-color: rgb(23, 169, 253);
+    border: rgb(151, 25, 255);
+    background-color: rgb(151, 25, 255);
 }
 
 .img {
@@ -216,7 +216,8 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px 15px 0px rgb(0, 0, 0);
 }
 
 .h2 {
