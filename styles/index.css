@@ -161,6 +161,7 @@ p {
     height: 7vh;
     width: 330px;
     max-width: 500px;
+    margin-left: 0px;
     margin-bottom: 1px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
