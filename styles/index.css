@@ -127,6 +127,18 @@ p {
     margin-left: 9%;
 }
 
+.button-folhetos:hover {
+    height: 50px;
+    width: 150px;
+    font-size: 1.2em;
+    background-color: #007cc4;
+    border: none;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+    margin-left: 9%;
+}
+
 @media (max-width: 768px) {
 
     .div-folhetos {
@@ -183,6 +195,18 @@ p {
     width: 150px;
     font-size: 1.2em;
     background-color: #00a2ff;
+    border: none;
+    cursor: pointer;
+    color: rgb(252, 252, 252);
+    border-radius: 5px;
+    margin-left: 9%;
+}
+
+.button-escala-Agosto:hover {
+    height: 60px;
+    width: 150px;
+    font-size: 1.2em;
+    background-color: #007cc4;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
