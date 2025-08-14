@@ -1,6 +1,6 @@
 function showContent(contentId) {
     const content = document.getElementById(contentId + 'Content');
-    const defaultImage = document.getElementById('defaultImage');
+    const defaultImage = document.getElementById('defaultBlock');
     const buttons = document.querySelectorAll('.Buttons');
 
     buttons.forEach(button => {
