@@ -65,7 +65,7 @@ h2-1 {
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: #00a2ff;
+    color: #0fca0f;
     border: none;
     border-radius: 5px;
 }
@@ -76,7 +76,7 @@ h2-1 {
 }
 
 p {
-    color: #00a2ff;
+    color: #0fca0f;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -118,8 +118,8 @@ p {
 .button-folhetos {
     height: 50px;
     width: 150px;
-    font-size: 1.2em;
-    background-color: #00a2ff;
+    font-size: 1.3em;
+    background-color: #0fca0f;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
@@ -128,15 +128,7 @@ p {
 }
 
 .button-folhetos:hover {
-    height: 50px;
-    width: 150px;
-    font-size: 1.2em;
-    background-color: #007cc4;
-    border: none;
-    cursor: pointer;
-    color: rgb(252, 252, 252);
-    border-radius: 5px;
-    margin-left: 9%;
+    background-color: #1bf31b;
 }
 
 @media (max-width: 768px) {
@@ -194,8 +186,8 @@ p {
 .button-escala-Agosto {
     height: 50px;
     width: 130px;
-    font-size: 1.2em;
-    background-color: #00a2ff;
+    font-size: 1.3em;
+    background-color: #0fca0f;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
@@ -203,15 +195,7 @@ p {
 }
 
 .button-escala-Agosto:hover {
-    height: 60px;
-    width: 150px;
-    font-size: 1.2em;
-    background-color: #007cc4;
-    border: none;
-    cursor: pointer;
-    color: rgb(252, 252, 252);
-    border-radius: 5px;
-    margin-left: 9%;
+    background-color: #1bf31b;
 }
 
 hr {
@@ -223,8 +207,8 @@ hr {
 }
 
 .active-hr {
-    border: #00a2ff;
-    background-color: #00a2ff;
+    border: #0fca0f;
+    background-color: #0fca0f;
 }
 
 .img {
@@ -238,7 +222,7 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 0px #00a2ff;
+    box-shadow: 0px 0px 15px 0px #000000;
 }
 
 .h2 {
