@@ -13,7 +13,7 @@ body {
     height: 150px;
     width: 150px;
     border-radius: 50%;
-    border: 1px solid black;
+    border: none;
 }
 
 h3 {
@@ -24,9 +24,9 @@ h3 {
 }
 
 h2 {
-    color: rgba(31, 31, 31, 0.925);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 1.3em;
+    color: rgba(0, 0, 0, 0.925);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
     margin: 10px 0;
 }
 
@@ -65,18 +65,23 @@ h2-1 {
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: #0fca0f;
+    color: #ff4869;
     border: none;
     border-radius: 5px;
 }
 
 .active-Buttons {
-    border: #00a2ff;
-    background-color: #00a2ff;
+    border: #ff4869;
+    background-color: #ff4869;
+}
+
+.active-hr {
+    border: #ff4869;
+    background-color: #ff4869;
 }
 
 p {
-    color: #0fca0f;
+    color: #ff4869;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -204,11 +209,6 @@ hr {
     background-color: black;
     border: none;
     transition: background-color 0.3s;
-}
-
-.active-hr {
-    border: #0fca0f;
-    background-color: #0fca0f;
 }
 
 .img {
