@@ -28,7 +28,7 @@ h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.4em;
     margin: 10px 0;
-    
+
 }
 
 h2-1 {
@@ -70,14 +70,13 @@ h2-1 {
     border: none;
 }
 
-.active-Buttons {
-    border: #3ffa10;
-    background-color: #3ffa10;
+.Buttons h3 {
+    color: black;
+    font-size: 24px;
 }
 
-.active-hr {
-    border: #3ffa10;
-    background-color: #3ffa10;
+.Buttons h3.active-h3 {
+    color: #3ffa10;
 }
 
 p {
@@ -222,7 +221,7 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 1px 5px 15px 5px #8B4513;
+    box-shadow: 1px 5px 15px 5px #115cff;
 }
 
 .h2 {
