@@ -4,8 +4,12 @@ function showContent(contentId) {
     const buttons = document.querySelectorAll('.Buttons');
 
     buttons.forEach(button => {
-        button.querySelector('hr').classList.remove('active-hr');
+        const h3 = button.querySelector('h3');
+        h3.classList.remove('active-h3');
     });
+
+    const activeButton = document.querySelector(`.Buttons[onclick="showContent('${contentId}')"]`);
+    const activeH3 = activeButton.querySelector('h3');
 
     if (!content.classList.contains('hidden')) {
         content.classList.add('hidden');
@@ -16,17 +20,12 @@ function showContent(contentId) {
         document.querySelectorAll('.content').forEach(content => {
             content.classList.add('hidden');
         });
+
         defaultImage.style.display = 'none';
         content.classList.remove('hidden');
         document.body.style.height = `${content.scrollHeight + 200}px`;
         localStorage.setItem('activeContent', contentId);
-        const activeButton = document.querySelector(`.Buttons[onclick="showContent('${contentId}')"]`);
-        activeButton.querySelector('hr').classList.add('active-hr');
+
+        activeH3.classList.add('active-h3');
     }
 }
-window.onload = function () {
-    const activeContent = localStorage.getItem('activeContent');
-    if (activeContent) {
-        showContent(activeContent);
-    }
-};
