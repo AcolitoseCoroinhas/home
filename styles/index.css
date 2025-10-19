@@ -77,11 +77,11 @@ h2-1 {
 }
 
 .Buttons h3.active-h3 {
-    color: #FFD700;
+    color: #2E8B57;
 }
 
 p {
-    color: #FFD700;
+    color: #2E8B57;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -124,7 +124,7 @@ p {
     height: 52px;
     width: 150px;
     font-size: 1.3em;
-    background-color: #FFD700;
+    background-color: #2E8B57;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
@@ -133,7 +133,7 @@ p {
 }
 
 .button-folhetos:hover {
-    background-color: #f8d822;
+    background-color: #24ce6e;
 }
 
 @media (max-width: 768px) {
@@ -192,7 +192,7 @@ p {
     height: 50px;
     width: 130px;
     font-size: 1.3em;
-    background-color: #FFD700;
+    background-color: #2E8B57;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
@@ -200,7 +200,7 @@ p {
 }
 
 .button-escala-Agosto:hover {
-    background-color: #f8d822;
+    background-color: #24ce6e;
 }
 
 hr {
@@ -222,7 +222,7 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 1px 5px 15px 5px #000000;
+    box-shadow: 1px 5px 15px 5px #24ce6e;
 }
 
 .h2 {
@@ -242,5 +242,5 @@ hr {
 }
 
 .defaulth2 {
-    margin-left: 20%;
+    margin-left: 35%;
 }
