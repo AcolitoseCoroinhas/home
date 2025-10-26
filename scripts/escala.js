@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "OUTUBRO", arquivo: "EscalaOutubro.PNG" }
+        { nome: "OUTUBRO", arquivo: "EscalaOutubro.jpg" }
     ];
 
     const container = document.getElementById("escalasContent");
