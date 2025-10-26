@@ -166,7 +166,7 @@ p {
     margin-left: 0px;
 }
 
-.div-escala-Agosto {
+.div-escala {
     width: 300px;
     height: 130px;
     margin: 10px auto 10px auto;
@@ -181,14 +181,14 @@ p {
     box-sizing: border-box;
 }
 
-.text-escala-Agosto {
+.text-escala {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     color: rgb(0, 0, 0);
 }
 
-.button-escala-Agosto {
+.button-escala {
     height: 50px;
     width: 130px;
     font-size: 1.3em;
@@ -199,7 +199,7 @@ p {
     border-radius: 5px;
 }
 
-.button-escala-Agosto:hover {
+.button-escala:hover {
     background-color: #795b09;
 }
 
