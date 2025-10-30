@@ -1,6 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
     const folhetos = [
-        { data: "26-Out-25", arquivo: "26-out-25.pdf" },
         { data: "02-Nov-25", arquivo: "02-nov-25.pdf" },
         { data: "09-Nov-25", arquivo: "09-nov-25.pdf" },
         { data: "16-Nov-25", arquivo: "16-nov-25.pdf" },
