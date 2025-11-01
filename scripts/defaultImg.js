@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/DiadeTodososSantos.png", alt: "Dia de todos os Santos" }
+    { src: "imagens/Missadosfieisdefuntos.png", alt: "Missa dos fiéis defuntos" }
   ];
 
   const container = document.getElementById("defaultImgContainer");
