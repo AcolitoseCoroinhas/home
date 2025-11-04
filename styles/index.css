@@ -15,6 +15,7 @@ body {
     border-radius: 30%;
     border: 1px solid black;
     box-shadow: 0px 0px 15px 0px #000000;
+    user-select: none;
 }
 
 h3 {
@@ -22,6 +23,7 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.4em;
     margin: 10px 0;
+    user-select: none;
 }
 
 h2 {
@@ -29,7 +31,7 @@ h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.4em;
     margin: 10px 0;
-
+    user-select: none;
 }
 
 h2-1 {
@@ -74,18 +76,20 @@ h2-1 {
 .Buttons h3 {
     color: black;
     font-size: 24px;
+    user-select: none;
 }
 
 .Buttons h3.active-h3 {
-    color: #daa520;
+    color: #1194ff;
 }
 
 p {
-    color: #daa520;
+    color: #1194ff;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     margin: 10px 0;
+    user-select: none;
 }
 
 .folhetos-container {
@@ -118,22 +122,24 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     color: rgb(0, 0, 0);
+    user-select: none;
 }
 
 .button-folhetos {
     height: 50px;
     width: 150px;
     font-size: 1.3em;
-    background-color: #daa520;
+    background-color: #1194ff;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
     border-radius: 5px;
     margin-left: 7%;
+    user-select: none;
 }
 
 .button-folhetos:hover {
-    background-color: #ffc227;
+    background-color: #1194ff;
 }
 
 @media (max-width: 768px) {
@@ -146,14 +152,6 @@ p {
         height: 60px;
     }
 
-    .frente,
-    .verso {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        max-width: 100%;
-        height: auto;
-    }
 }
 
 .escalas-container {
@@ -186,21 +184,23 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     color: rgb(0, 0, 0);
+    user-select: none;
 }
 
 .button-escala {
     height: 50px;
     width: 130px;
     font-size: 1.3em;
-    background-color: #daa520;
+    background-color: #1194ff;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
     border-radius: 5px;
+    user-select: none;
 }
 
 .button-escala:hover {
-    background-color: #ffc227;
+    background-color: #1194ff;
 }
 
 hr {
@@ -216,13 +216,15 @@ hr {
     justify-content: center;
     margin-top: 25px;
     margin-left: 0px;
+    user-select: none;
 }
 
 .img img {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 1px 5px 15px 5px #694d00;
+    box-shadow: 1px 5px 15px 5px #1194ff;
+    user-select: none;
 }
 
 .h2 {
@@ -231,18 +233,9 @@ hr {
     align-items: center;
 }
 
-.verso {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    border: 1px solid #000000;
-    border-radius: 5px;
-    height: auto;
-}
-
 .defaulth2 {
-    margin-left: 35%;
+    text-align: center;
+    user-select: none;
 }
 
 .button-escala:disabled {
