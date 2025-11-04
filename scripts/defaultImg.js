@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/Missadosfieisdefuntos.png", alt: "Missa dos fiéis defuntos" }
+    { src: "imagens/DedicaçãodaBasílicadoLatrão.png", 
+      alt: "Dedicação da Basílica do Latrão (Catedral de Roma) | Festa | Domingo"
+    }
   ];
 
   const container = document.getElementById("defaultImgContainer");
