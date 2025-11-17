@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", () => {
         { data: "02-Nov-25", arquivo: "02-nov-25.pdf" },
         { data: "09-Nov-25", arquivo: "09-nov-25.pdf" },
         { data: "16-Nov-25", arquivo: "16-nov-25.pdf" },
-        { data: "23-Nov-25", arquivo: "23-nov-25.pdf" }
+        { data: "23-Nov-25", arquivo: "23-nov-25.pdf" },
+        { data: "30-Nov-25", arquivo: "30-nov-25.pdf" }
     ];
 
     const container = document.getElementById("folhetosContainer");
