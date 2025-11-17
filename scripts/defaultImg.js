@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/DedicaçãodaBasílicadoLatrão.png", 
-      alt: "Dedicação da Basílica do Latrão (Catedral de Roma) | Festa | Domingo"
+    { src: "imagens/santa_isabel_hungria.png", 
+      alt: "Santa Isabel da Hungria"
     }
   ];
 
