@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         div.innerHTML = `
             <h1 class="text-escala">${escala.nome}</h1>
-            <a href="${link}">
+            <a href="${link}" target="_blank">
                 <button class="button-escala">Baixar</button>
             </a>
         `;
