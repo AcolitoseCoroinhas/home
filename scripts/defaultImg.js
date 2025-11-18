@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/santa_isabel_hungria.png", 
-      alt: "Santa Isabel da Hungria"
+    { src: "imagens/NossoSenhorJesusCristoReidoUniverso.png", 
+      alt: "Nosso Senhor Jesus Cristo Rei do Universo"
     }
   ];
 
