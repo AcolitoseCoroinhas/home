@@ -8,11 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const coresFolhetos = [
-        "#8734beff",
+        "#a741ebff",
         "#d8ae23ff",
         "#5bf85bff",
         "#d8ae23ff",
-        "#8734beff"
+        "#a741ebff"
     ];
 
     const container = document.getElementById("folhetosContainer");
