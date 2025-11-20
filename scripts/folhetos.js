@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const coresFolhetos = [
         "#8734beff",
         "#d8ae23ff",
-        "#36fc36ff",
+        "#5bf85bff",
         "#d8ae23ff",
         "#8734beff"
     ];
