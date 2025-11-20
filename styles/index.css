@@ -68,7 +68,7 @@ h2-1 {
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: #5cff11;
+    color: #155dbb;
     border: none;
 }
 
@@ -79,11 +79,11 @@ h2-1 {
 }
 
 .Buttons h3.active-h3 {
-    color: #5cff11;
+    color: #155dbb;
 }
 
 p {
-    color: #5cff11;
+    color: #155dbb;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -129,17 +129,19 @@ p {
     width: 150px;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #5cff11;
-    border: none;
+    background-color: #155dbb;
+    border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
     color: rgb(252, 252, 252);
-    border-radius: 5px;
-    margin-left: 7%;
+    margin-left: 8%;
     user-select: none;
+
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 5px;
 }
 
 .button-folhetos:hover {
-    background-color: #46bd0f;
+    background-color: #1358b3;
 }
 
 @media (max-width: 768px) {
@@ -192,7 +194,7 @@ p {
     width: 130px;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #5cff11;
+    background-color: #155dbb;
     border: none;
     cursor: pointer;
     color: rgb(252, 252, 252);
@@ -201,7 +203,7 @@ p {
 }
 
 .button-escala:hover {
-    background-color: #46bd0f;
+    background-color: #1358b3;
 }
 
 hr {
@@ -224,7 +226,7 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 1px 5px 15px 5px #6e3403;
+    box-shadow: 1px 5px 15px 5px #155dbb;
     user-select: none;
 }
 
