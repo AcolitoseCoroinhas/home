@@ -7,11 +7,20 @@ document.addEventListener("DOMContentLoaded", () => {
         { data: "30-Nov-25", arquivo: "30-nov-25.pdf" }
     ];
 
+    const coresFolhetos = [
+        "#8734beff",
+        "#d8ae23ff",
+        "#36fc36ff",
+        "#d8ae23ff",
+        "#8734beff"
+    ];
+
     const container = document.getElementById("folhetosContainer");
 
-    folhetos.forEach(folheto => {
+    folhetos.forEach((folheto, index) => {
         const div = document.createElement("div");
         div.classList.add("div-folhetos");
+        div.style.backgroundColor = coresFolhetos[index % coresFolhetos.length];
 
         div.innerHTML = `
             <h1 class="text-folhetos">${folheto.data}</h1>
