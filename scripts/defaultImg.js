@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/cristo_rei_universo_realista.png", 
-      alt: "Cristo Rei do Universo"
+    { src: "imagens/1domingodoadvento.jpg", 
+      alt: "1° domingo do advento"
     }
   ];
 
