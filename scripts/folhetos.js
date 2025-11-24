@@ -1,18 +1,22 @@
 document.addEventListener("DOMContentLoaded", () => {
     const folhetos = [
-        { data: "02-Nov-25", arquivo: "02-nov-25.pdf" },
-        { data: "09-Nov-25", arquivo: "09-nov-25.pdf" },
-        { data: "16-Nov-25", arquivo: "16-nov-25.pdf" },
-        { data: "23-Nov-25", arquivo: "23-nov-25.pdf" },
-        { data: "30-Nov-25", arquivo: "30-nov-25.pdf" }
+        { data: "30-Nov-25", arquivo: "30-nov-25.pdf" },
+        { data: "07-Dez-25", arquivo: "7-dez-25.pdf" },
+        { data: "14-Dez-25", arquivo: "14-dez-25.pdf" },
+        { data: "21-Dez-25", arquivo: "21-dez-25.pdf" },
+        { data: "24-Dez-25", arquivo: "24-dez-25.pdf" },
+        { data: "25-Dez-25", arquivo: "25-dez-25.pdf" },
+        { data: "28-Dez-25", arquivo: "28-dez-25.pdf" }
     ];
 
     const coresFolhetos = [
-        "#a741ebff",
-        "#d8ae23ff",
-        "#5bf85bff",
-        "#d8ae23ff",
-        "#a741ebff"
+        "#7127a1ff",
+        "#7127a1ff",
+        "#7127a1ff",
+        "#7127a1ff",
+        "#ffcf31ff",
+        "#ffcf31ff",
+        "#ffcf31ff"
     ];
 
     const container = document.getElementById("folhetosContainer");
@@ -20,10 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
     folhetos.forEach((folheto, index) => {
         const div = document.createElement("div");
         div.classList.add("div-folhetos");
-        div.style.backgroundColor = coresFolhetos[index % coresFolhetos.length];
+        
+        const corDoTexto = coresFolhetos[index % coresFolhetos.length];
 
         div.innerHTML = `
-            <h1 class="text-folhetos">${folheto.data}</h1>
+            <h1 class="text-folhetos" style="color: ${corDoTexto};">${folheto.data}</h1>
             <a href="folhetos/${folheto.arquivo}" target="_blank">
                 <button class="button-folhetos">Baixar</button>
             </a>
