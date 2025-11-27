@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+
     const folhetos = [
         { data: "30-Nov-25", arquivo: "30-nov-25.pdf" },
         { data: "07-Dez-25", arquivo: "7-dez-25.pdf" },
@@ -19,6 +20,16 @@ document.addEventListener("DOMContentLoaded", () => {
         "#ffcf31ff"
     ];
 
+    const coresButtons = [
+        "#7127a1ff",
+        "#7127a1ff",
+        "#7127a1ff",
+        "#7127a1ff",
+        "#ffcf31ff",
+        "#ffcf31ff",
+        "#ffcf31ff"
+    ]
+
     const container = document.getElementById("folhetosContainer");
 
     folhetos.forEach((folheto, index) => {
@@ -27,10 +38,12 @@ document.addEventListener("DOMContentLoaded", () => {
         
         const corDoTexto = coresFolhetos[index % coresFolhetos.length];
 
+        const corDoButton = coresButtons[index % coresFolhetos.length];
+
         div.innerHTML = `
             <h1 class="text-folhetos" style="color: ${corDoTexto};">${folheto.data}</h1>
             <a href="folhetos/${folheto.arquivo}" target="_blank">
-                <button class="button-folhetos">Baixar</button>
+                <button class="button-folhetos" style="background-color: ${corDoButton};">Baixar</button>
             </a>
         `;
 
