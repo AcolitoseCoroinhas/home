@@ -108,7 +108,7 @@ p {
     margin-bottom: 10px;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    border: 2px solid rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -129,7 +129,6 @@ p {
     width: 150px;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #830abb;
     border: 1px solid rgb(0, 0, 0);
     cursor: pointer;
     color: rgb(252, 252, 252);
