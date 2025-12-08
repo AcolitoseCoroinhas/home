@@ -225,8 +225,9 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px #7127a1ff;
-    border: 1px solid black;
+    box-shadow: 5px 5px 15px 5px rgb(8, 184, 253);
+    /*box-shadow: 5px 5px 15px 5px #7127a1ff;border: 1px solid black;*/
+    
     user-select: none;
 }
 
