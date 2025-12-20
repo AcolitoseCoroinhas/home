@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/3°domingodoadvento.png", 
-      alt: "1° domingo do advento"
+    { src: "imagens/4°domingodoadvento.png", 
+      alt: "4° domingo do advento"
     }
   ];
 
