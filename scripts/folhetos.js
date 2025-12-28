@@ -1,30 +1,36 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-        { data: "07-Dez-25", arquivo: "7-dez-25.pdf" },
-        { data: "14-Dez-25", arquivo: "14-dez-25.pdf" },
-        { data: "21-Dez-25", arquivo: "21-dez-25.pdf" },
-        { data: "24-Dez-25", arquivo: "24-dez-25.pdf" },
-        { data: "25-Dez-25", arquivo: "25-dez-25.pdf" },
-        { data: "28-Dez-25", arquivo: "28-dez-25.pdf" }
+
+        { data: "28-Dez-25", arquivo: "28-dez-25.pdf" },
+        { data: "01-Jan-26", arquivo: "01-jan-26.pdf" },
+        { data: "04-Jan-26", arquivo: "04-jan-26.pdf" },
+        { data: "11-Jan-26", arquivo: "11-jan-26.pdf" },
+        { data: "18-Jan-26", arquivo: "18-jan-26.pdf" },
+        { data: "25-Jan-26", arquivo: "25-jan-26.pdf" }
+
     ];
 
     const coresFolhetos = [
-        "#7127a1ff",
-        "#7127a1ff",
-        "#7127a1ff",
+
         "#ffcf31ff",
         "#ffcf31ff",
-        "#ffcf31ff"
+        "#ffcf31ff",
+        "#ffcf31ff",
+        "#1cf715ff",
+        "#1cf715ff"
+
     ];
 
     const coresButtons = [
-        "#7127a1ff",
-        "#7127a1ff",
-        "#7127a1ff",
+
         "#ffcf31ff",
         "#ffcf31ff",
-        "#ffcf31ff"
+        "#ffcf31ff",
+        "#ffcf31ff",
+        "#1cf715ff",
+        "#1cf715ff"
+        
     ]
 
     const container = document.getElementById("folhetosContainer");
@@ -32,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
     folhetos.forEach((folheto, index) => {
         const div = document.createElement("div");
         div.classList.add("div-folhetos");
-        
+
         const corDoTexto = coresFolhetos[index % coresFolhetos.length];
 
         const corDoButton = coresButtons[index % coresFolhetos.length];
