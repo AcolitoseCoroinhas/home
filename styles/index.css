@@ -68,22 +68,29 @@ h2-1 {
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: #830abb;
+    color: #ffcf31ff;
     border: none;
+    
 }
 
 .Buttons h3 {
     color: black;
     font-size: 24px;
     user-select: none;
+    text-shadow: 
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
+    
 }
 
 .Buttons h3.active-h3 {
-    color: #830abb;
+    color: #ffcf31ff;
 }
 
 p {
-    color: #830abb;
+    color: #ffcf31ff;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -115,14 +122,18 @@ p {
     padding: 0 10px;
 }
 
-
 .text-folhetos {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
-    color: rgb(255, 255, 255);
     user-select: none;
+    text-shadow:
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
+
 
 .button-folhetos {
     height: 50px;
@@ -135,12 +146,8 @@ p {
     margin-left: 8%;
     user-select: none;
 
-    border-top-right-radius: 5px; 
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
-}
-
-.button-folhetos:hover {
-    background-color: #a014e0;
 }
 
 @media (max-width: 768px) {
@@ -171,7 +178,7 @@ p {
     margin: 10px auto 10px auto;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 8px 1px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,8 +191,13 @@ p {
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
-    color: rgb(0, 0, 0);
+    color: #ffcf31ff;
     user-select: none;
+    text-shadow: 
+        -1px -1px 0 black,
+         1px -1px 0 black,
+        -1px  1px 0 black,
+         1px  1px 0 black;
 }
 
 .button-escala {
@@ -194,7 +206,7 @@ p {
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #830abb;
-    border: none;
+    border: 1px solid black;
     cursor: pointer;
     color: rgb(252, 252, 252);
     border-radius: 5px;
