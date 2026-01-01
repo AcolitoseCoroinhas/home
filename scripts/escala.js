@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "Janeiro", arquivo: "" }
+        { nome: "JANEIRO", arquivo: "" }
     ];
 
     const container = document.getElementById("escalasContainer");
