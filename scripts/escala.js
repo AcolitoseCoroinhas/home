@@ -1,7 +1,6 @@
-/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "Janeiro", arquivo: "escalas/EscalaDeDezembro.jpg" }
+        { nome: "Janeiro", arquivo: "escalas/EscaladeJaneiro.jpg" }
     ];
 
     const container = document.getElementById("escalasContainer");
@@ -22,8 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(div);
     });
 });
-*/
 
+
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
         { nome: "JANEIRO", arquivo: "" }
@@ -48,3 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(div);
     });
 });
+*/
+
