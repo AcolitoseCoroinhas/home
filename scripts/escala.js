@@ -1,9 +1,9 @@
-document.addEventListener("DOMContentLoaded", () => {
+/*document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
         { nome: "Janeiro", arquivo: "escalas/EscaladeJaneiro.jpg" }
     ];
 
-    const container = document.getElementById("escalasContainer");
+const container = document.getElementById("escalasContainer");
 
     escalas.forEach(escala => {
         const div = document.createElement("div");
@@ -22,11 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
-/*
+*/
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "JANEIRO", arquivo: "" }
+        { nome: "Janeiro", arquivo: "" }
     ];
 
     const container = document.getElementById("escalasContainer");
