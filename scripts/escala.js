@@ -23,6 +23,7 @@ const container = document.getElementById("escalasContainer");
 });
 
 */
+
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
         { nome: "Janeiro", arquivo: "" }
@@ -47,5 +48,3 @@ document.addEventListener("DOMContentLoaded", () => {
         container.appendChild(div);
     });
 });
-*/
-
