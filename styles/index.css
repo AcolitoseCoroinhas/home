@@ -77,12 +77,6 @@ h2-1 {
     color: black;
     font-size: 24px;
     user-select: none;
-    text-shadow: 
-        -1px -1px 0 black,
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
-    
 }
 
 .Buttons h3.active-h3 {
@@ -127,11 +121,6 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
     user-select: none;
-    text-shadow:
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px 1px 0 black,
-        1px 1px 0 black;
 }
 
 
@@ -190,13 +179,8 @@ p {
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.2em;
-    color: rgb(218, 173, 29);
+    color: rgb(0, 0, 0);
     user-select: none;
-    text-shadow: 
-        -1px -1px 0 black,
-         1px -1px 0 black,
-        -1px  1px 0 black,
-         1px  1px 0 black;
 }
 
 .button-escala {
