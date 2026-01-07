@@ -11,8 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const coresFolhetos = [
 
-        "#ffcf31ff",
-        "#ffcf31ff",
+        "#cfa51aff",
+        "#cfa51aff",
         "#1cf715ff",
         "#1cf715ff"
 
@@ -20,12 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const coresButtons = [
 
-        "#ffcf31ff",
-        "#ffcf31ff",
+        "#cfa51aff",
+        "#cfa51aff",
         "#1cf715ff",
         "#1cf715ff"
         
-    ]
+    ];
 
     const container = document.getElementById("folhetosContainer");
 
