@@ -68,9 +68,8 @@ h2-1 {
     font-size: 1.3em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: transparent;
-    color: rgb(218, 173, 29);
+    color: #1cf715ff;
     border: none;
-    
 }
 
 .Buttons h3 {
@@ -80,11 +79,11 @@ h2-1 {
 }
 
 .Buttons h3.active-h3 {
-    color: rgb(218, 173, 29);
+    color: #1cf715ff;
 }
 
 p {
-    color: rgb(218, 173, 29);
+    color: #1cf715ff;
     font-size: 1.5em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -188,7 +187,7 @@ p {
     width: 130px;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(218, 173, 29);
+    background-color: #1cf715ff;
     box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
     border: none;
     cursor: pointer;
@@ -198,7 +197,7 @@ p {
 }
 
 .button-escala:hover {
-    background-color: rgb(218, 173, 29);
+    background-color: #1cf715ff;
 }
 
 hr {
@@ -221,8 +220,8 @@ hr {
     width: 380px;
     height: auto;
     border-radius: 10px;
-    /* border: 1px solid black; box-shadow: 5px 5px 15px 5px rgb(8, 184, 253);*/
-    box-shadow: 0px 0px 15px 5px rgb(184, 172, 7);
+    border: 1px solid black;
+    box-shadow: 0px 0px 15px 5px #1cf715ff;
     user-select: none;
 }
 
