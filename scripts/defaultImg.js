@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   const imagens = [
-    { src: "imagens/BatismodeJesus.png", 
-      alt: "Batismo de Jesus"
+    { src: "imagens/TempoComum.png", 
+      alt: "Tempo Comum"
     }
   ];
 
