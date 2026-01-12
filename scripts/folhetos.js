@@ -2,8 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
 
-        { data: "04-Jan-26", arquivo: "04-jan-26.pdf" },
-        { data: "11-Jan-26", arquivo: "11-jan-26.pdf" },
         { data: "18-Jan-26", arquivo: "18-jan-26.pdf" },
         { data: "25-Jan-26", arquivo: "25-jan-26.pdf" }
 
@@ -11,8 +9,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const coresFolhetos = [
 
-        "#cfa51aff",
-        "#cfa51aff",
+        "#1cf715ff",
+        "#1cf715ff",
         "#1cf715ff",
         "#1cf715ff"
 
@@ -20,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const coresButtons = [
 
-        "#cfa51aff",
-        "#cfa51aff",
+        "#1cf715ff",
+        "#1cf715ff",
         "#1cf715ff",
         "#1cf715ff"
         
