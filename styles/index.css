@@ -285,7 +285,10 @@ hr {
     .scroll-container {
         width: 100vw;
         height: 60vh;
-        margin-top: 5px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .h1-scroll {
