@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "Janeiro", arquivo: "escalas/Escaladejaneiro.jpg" }
+        { nome: "Janeiro", arquivo: "escalas/EscaladeJaneiro.jpg" }
     ];
 
-const container = document.getElementById("escalasContainer");
+    const container = document.getElementById("escalasContainer");
 
     escalas.forEach(escala => {
         const div = document.createElement("div");
@@ -20,7 +20,9 @@ const container = document.getElementById("escalasContainer");
 
         container.appendChild(div);
     });
+    document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
+
 
 /*
 document.addEventListener("DOMContentLoaded", () => {
@@ -48,3 +50,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 */
+
