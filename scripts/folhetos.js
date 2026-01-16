@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "#1cf715ff",
         "#1cf715ff",
         "#1cf715ff"
-        
+
     ];
 
     const container = document.getElementById("folhetosContainer");
@@ -42,4 +42,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
         container.appendChild(div);
     });
+    document.querySelector("#folhetosContent .content").classList.remove("hidden");
 });
