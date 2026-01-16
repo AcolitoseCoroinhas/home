@@ -280,3 +280,15 @@ hr {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     user-select: none;
 }
+
+@media (max-width: 768px) {
+    .scroll-container {
+        width: 100vw;
+        height: 60vh;
+        margin-top: 5px;
+    }
+
+    .h1-scroll {
+        font-size: 18px;
+    }
+}
