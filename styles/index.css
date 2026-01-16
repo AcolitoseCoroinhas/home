@@ -279,6 +279,20 @@ hr {
     user-select: none;
 }
 
+.scroll-container::-webkit-scrollbar {
+    height: 8px;
+    background: transparent;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
 @media (max-width: 768px) {
     .scroll-container {
         width: 100vw;
