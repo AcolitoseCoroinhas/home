@@ -306,6 +306,10 @@ hr {
     .h1-scroll {
         font-size: 26px;
     }
+
+    footer {
+        font-size: 12px;
+    }
 }
 
 footer {
