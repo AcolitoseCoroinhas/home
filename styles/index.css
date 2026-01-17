@@ -307,22 +307,36 @@ hr {
         font-size: 26px;
     }
 
-    footer h1 {
-        font-size: 14px;
+    .sites h1 {
+        font-size: 12px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
     }
 }
 
-footer {
+.sites {
     position: fixed;
     bottom: 0;
-    left: 0;
-    width: 100%;
+    left: 35%;
+    width: 30%;
     text-align: center;
     padding: 10px;
     font-size: 12px;
+    user-select: none;
 }
 
-footer a {
+.sites a {
     color: black;
+    text-decoration: none;
+    color: inherit;
+}
 
+.sites h1 {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: block;
+    color: #000;    
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
 }
