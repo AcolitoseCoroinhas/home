@@ -247,7 +247,7 @@ hr {
     width: 30vw;
     height: 70vh;
     position: absolute;
-    top: 30%;
+    top: 38%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -279,6 +279,7 @@ hr {
     user-select: none;
 }
 
+/*
 .scroll-container::-webkit-scrollbar {
     height: 8px;
     background: transparent;
@@ -292,6 +293,7 @@ hr {
 .scroll-container::-webkit-scrollbar-track {
     background: transparent;
 }
+*/
 
 @media (max-width: 768px) {
     .scroll-container {
