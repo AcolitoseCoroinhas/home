@@ -221,10 +221,13 @@ hr {
     margin: 20px 0;
 }
 
+/*
 .scroll-container::-webkit-scrollbar {
     height: 0;
     background: transparent;
 }
+*/
+
 
 .container {
     flex: 0 0 100%;
@@ -269,10 +272,16 @@ hr {
     body {
         overflow-x: hidden;
     }
+
     .scroll-container {
         width: 100vw;
         height: 60vh;
         position: relative;
+    }
+
+    .scroll-container::-webkit-scrollbar {
+        height: 0;
+        background: transparent;
     }
 
     .div-folhetos {
@@ -280,6 +289,6 @@ hr {
     }
 
     .sites h1 {
-        font-size: 14px;
+        font-size: 17px;
     }
 }
