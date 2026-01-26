@@ -266,6 +266,9 @@ hr {
 }
 
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
     .scroll-container {
         width: 100vw;
         height: 60vh;
