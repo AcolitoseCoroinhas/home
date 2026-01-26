@@ -2,27 +2,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
 
-        { data: "18-Jan-26", arquivo: "18-jan-26.pdf" },
-        { data: "25-Jan-26", arquivo: "25-jan-26.pdf" }
-
+        { data: "01-Fev-26", arquivo: "1-fev-26.pdf" },
+        { data: "08-Fev-26", arquivo: "8-fev-26.pdf" },
+        { data: "15-Fev-26", arquivo: "15-fev-26.pdf" },
+        { data: "18-Fev-26", arquivo: "18-fev-26.pdf" },
+        { data: "22-Fev-26", arquivo: "22-fev-26.pdf" },
     ];
 
     const coresFolhetos = [
 
-        "#1cf715ff",
-        "#1cf715ff",
-        "#1cf715ff",
-        "#1cf715ff"
-
+        "rgb(69, 243, 63)",
+        "rgb(69, 243, 63)",
+        "rgb(69, 243, 63)",
+        "rgb(118, 11, 160)",
+        "rgb(118, 11, 160)"
     ];
 
     const coresButtons = [
 
-        "#1cf715ff",
-        "#1cf715ff",
-        "#1cf715ff",
-        "#1cf715ff"
-
+        "rgb(69, 243, 63)",
+        "rgb(69, 243, 63)",
+        "rgb(69, 243, 63)",
+        "rgb(118, 11, 160)",
+        "rgb(118, 11, 160)"
     ];
 
     const container = document.getElementById("folhetosContainer");
