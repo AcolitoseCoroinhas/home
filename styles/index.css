@@ -314,14 +314,13 @@ hr {
 }
 
 .sites {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
     text-align: center;
-    padding: 10px;
+    padding: 20px 0;
     font-size: 12px;
     user-select: none;
+    margin-top: 420px;
+    clear: both;
 }
 
 .sites a {
