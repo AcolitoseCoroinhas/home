@@ -13,83 +13,19 @@ body {
     height: 180px;
     width: 180px;
     border-radius: 50%;
-    box-shadow: 0px 0px 15px 0px #000000;
+    box-shadow: 0px 0px 7px 0px #000000;
     user-select: none;
 }
 
-h3 {
-    color: rgba(31, 31, 31, 0.925);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    margin: 10px 0;
-    user-select: none;
-}
 
 h2 {
     color: rgba(0, 0, 0, 0.925);
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.4em;
-    margin: 10px 0;
-    user-select: none;
-}
-
-h2-1 {
-    color: rgba(94, 94, 94, 0.89);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.1em;
-    margin: 10px 0;
-}
-
-.content {
-    margin-top: 5px;
-    padding: 20px;
-    border: none;
-    border-radius: 10px;
-    background-color: transparent;
-    width: 80%;
-    max-width: 600px;
-    text-align: center;
-}
-
-.hidden {
-    display: none;
-}
-
-.button-container {
-    margin-left: 20px;
-    height: 70px;
-    background-color: transparent;
-    display: flex;
-}
-
-.Buttons {
-    margin: 5px;
-    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.3em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: transparent;
-    color: #1cf715ff;
-    border: none;
-}
-
-.Buttons h3 {
-    color: black;
-    font-size: 24px;
+    margin: 20px 0;
     user-select: none;
 }
 
-.Buttons h3.active-h3 {
-    color: #1cf715ff;
-}
-
-p {
-    color: #1cf715ff;
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    margin: 10px 0;
-    user-select: none;
-}
 
 .folhetos-container {
     display: flex;
@@ -115,8 +51,8 @@ p {
 }
 
 .text-folhetos {
-    font-size: 17px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.2em;
     user-select: none;
 }
@@ -159,8 +95,8 @@ p {
 }
 
 .text-escala {
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 19px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     line-height: 1.2em;
     color: rgb(0, 0, 0);
     user-select: none;
@@ -215,7 +151,7 @@ hr {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     width: 95vw;
-    max-width: 600px;
+    max-width: 400px;
     height: 65vh;
     position: relative;
     margin: 20px 0;
@@ -227,7 +163,6 @@ hr {
     background: transparent;
 }
 */
-
 
 .container {
     flex: 0 0 100%;
@@ -242,7 +177,7 @@ hr {
     color: #333;
     margin-bottom: 10px;
     font-size: 26px;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     user-select: none;
 }
 
@@ -260,6 +195,15 @@ hr {
     user-select: none;
 }
 
+.sites h1:hover {
+    transform: scale(1.1, 1.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    display: block;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
 .sites h1 {
     padding: 10px;
     margin-bottom: 10px;
@@ -274,7 +218,7 @@ hr {
     }
 
     .scroll-container {
-        width: 100vw;
+        width: 90vw;
         height: 60vh;
         position: relative;
     }
@@ -290,5 +234,14 @@ hr {
 
     .sites h1 {
         font-size: 17px;
+    }
+
+    .sites h1:hover {
+        transform: scale(1.1, 1.1);
+        padding: 10px;
+        margin-bottom: 10px;
+        display: block;
+        font-family: Georgia, serif;
+        font-size: 16px;
     }
 }
