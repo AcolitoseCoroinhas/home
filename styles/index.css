@@ -230,13 +230,16 @@ hr {
     }
 
     .div-folhetos {
-        width: 100%;
-        margin-left: 10px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .sites h1 {
         font-size: 17px;
-        margin-left: 10px;
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
     }
 
     .sites h1:hover {
@@ -246,6 +249,6 @@ hr {
         display: block;
         font-family: Georgia, serif;
         font-size: 16px;
-        margin-left: 10px;
+        margin-left: 0;
     }
 }
