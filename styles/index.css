@@ -221,6 +221,7 @@ hr {
         width: 100vw;
         height: 60vh;
         position: relative;
+        max-width: 500px;
     }
 
     .scroll-container::-webkit-scrollbar {
