@@ -236,6 +236,7 @@ hr {
 
     .sites h1 {
         font-size: 17px;
+        margin-left: 10px;
     }
 
     .sites h1:hover {
@@ -245,5 +246,6 @@ hr {
         display: block;
         font-family: Georgia, serif;
         font-size: 16px;
+        margin-left: 10px;
     }
 }
