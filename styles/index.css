@@ -107,7 +107,7 @@ h2 {
     width: 130px;
     font-size: 1.4em;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    background-color: #1cf715ff;
+    background-color: rgb(118, 11, 160);
     border: 1px solid black;
     cursor: pointer;
     color: rgb(255, 255, 255);
@@ -235,6 +235,7 @@ hr {
         margin-right: auto;
     }
 
+    
     .sites h1 {
         font-size: 17px;
         margin-left: 0;
