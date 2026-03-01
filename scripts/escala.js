@@ -1,3 +1,4 @@
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
         { nome: "Março", arquivo: "" }
@@ -23,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
+*/
 
-/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "Março", arquivo: "escalas/EscaladeFevereiro.jpg" }
+        { nome: "Março", arquivo: "escalas/EscaladeMarço.jpg" }
     ];
 
     const container = document.getElementById("escalasContainer");
@@ -49,4 +50,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
-*/
