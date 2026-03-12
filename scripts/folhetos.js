@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
         { data: "8-Mar-26", arquivo: "8-mar-26.pdf" },
         { data: "15-Mar-26", arquivo: "15-mar-26.pdf" },
         { data: "22-Mar-26", arquivo: "22-mar-26.pdf" },
+        { data: "Livr. Semana Santa", arquivo: "LIVRETOSEMANASANTA2026.pdf" },
     ];
 
     const coresFolhetos = [
