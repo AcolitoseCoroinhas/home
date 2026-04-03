@@ -11,17 +11,17 @@ document.addEventListener("DOMContentLoaded", () => {
     const coresFolhetos = [
 
         "rgb(31, 173, 255)",
-        "rgb(245, 212, 67)",
-        "rgb(245, 212, 67)",
-        "rgb(245, 212, 67)"
+        "rgb(255, 213, 25)",
+        "rgb(255, 213, 25)",
+        "rgb(255, 213, 25)"
     ];
 
     const coresButtons = [
 
         "rgb(31, 173, 255)",
-        "rgb(245, 212, 67)",
-        "rgb(245, 212, 67)",
-        "rgb(245, 212, 67)"
+        "rgb(255, 213, 25)",
+        "rgb(255, 213, 25)",
+        "rgb(255, 213, 25)"
     ];
 
     const container = document.getElementById("folhetosContainer");
