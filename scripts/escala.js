@@ -1,7 +1,6 @@
-/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "Maio", arquivo: "" }
+        { nome: "DESATIVADO", arquivo: "" }
     ];
 
     const container = document.getElementById("escalasContainer");
@@ -24,8 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
-*/
 
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
         { nome: "Maio", arquivo: "escalas/EscaladeMaio.jpg" }
@@ -50,3 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
+*/
