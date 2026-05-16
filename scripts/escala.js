@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     const escalas = [
-        { nome: "DESATIVADO", arquivo: "" }
+        { nome: "JUNHO", arquivo: "" }
     ];
 
     const container = document.getElementById("escalasContainer");
