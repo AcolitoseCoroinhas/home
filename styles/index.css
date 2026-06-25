@@ -213,6 +213,12 @@ hr {
     font-size: 16px;
 }
 
+.formacao {
+    height: 300px;
+    width: 300px;
+    user-select: none;
+}
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
@@ -257,4 +263,11 @@ hr {
         transform: scale(1.1);
         margin: 0 auto 10px auto;
     }
+
+    .formacao {
+        width: 240px;
+        height: 240px;
+        max-width: 90vw;
+    }
+
 }
