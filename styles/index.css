@@ -12,10 +12,9 @@ body {
 .logo {
     height: 180px;
     width: 180px;
-    border-radius: 50%;
+    border-radius: 10%;
     box-shadow: 0px 0px 7px 0px #f8f8f8;
     user-select: none;
-    border: 1px solid black;
 }
 
 
@@ -196,25 +195,17 @@ hr {
     user-select: none;
 }
 
-.sites h1:hover {
-    transform: scale(1.1, 1.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    display: block;
-    font-family: Georgia, serif;
-    font-size: 16px;
-}
-
 .sites h1 {
     padding: 10px;
     margin-bottom: 10px;
     display: block;
-    font-family: Georgia, serif;
-    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    user-select: none;
 }
 
 .formacao {
-    height: 300px;
+    height: 350px;
     width: 300px;
     user-select: none;
 }
