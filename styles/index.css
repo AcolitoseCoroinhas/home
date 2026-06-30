@@ -217,54 +217,71 @@ hr {
 }
 
 @media (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
+  body {
+    overflow-x: hidden;
+    padding-top: 10px;
+  }
 
-    .scroll-container {
-        width: 100vw;
-        height: 60vh;
-        position: relative;
-        max-width: 500px;
-    }
+  .folhetos-container, 
+  .escalas-container {
+    margin-top: 10px;
+  }
 
-    .scroll-container::-webkit-scrollbar {
-        height: 0;
-        background: transparent;
-    }
+  .div-escala {
+    margin: 5px auto;
+  }
 
-    .div-folhetos {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  .img {
+    margin-top: 10px;
+  }
 
-    .sites {
-        margin-top: 10px;
-        padding: 10px 0;
-        position: relative;
-        z-index: 10;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .img img {
+    width: 90vw;
+  }
 
-    .sites h1 {
-        margin: 0 auto 5px auto;
-        padding: 5px;
-        font-size: 15px;
-        text-align: center;
-    }
+  .scroll-container {
+    width: 100vw;
+    height: 50vh;
+    margin: 10px 0;
+    max-width: 500px;
+  }
 
-    .sites h1:hover {
-        transform: scale(1.1);
-        margin: 0 auto 10px auto;
-    }
+  .scroll-container::-webkit-scrollbar {
+    height: 0;
+    background: transparent;
+  }
 
-    .formacao {
-        width: 240px;
-        height: 350px;
-        max-width: 95vw;
-    }
+  .div-folhetos {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
+  .sites {
+    margin-top: 5px;
+    padding: 5px 0;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sites h1 {
+    margin: 0 auto 5px auto;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .sites h1:hover {
+    transform: scale(1.1);
+    margin: 0 auto 10px auto;
+  }
+
+  .formacao {
+    width: 240px;
+    height: 350px;
+    max-width: 95vw;
+  }
 }
