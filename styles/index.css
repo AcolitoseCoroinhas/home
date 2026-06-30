@@ -9,14 +9,14 @@ body {
     margin-bottom: 20px;
 }
 
-.logo {
-    height: 180px;
-    width: 180px;
-    border-radius: 10%;
-    box-shadow: 0px 0px 7px 0px #f8f8f8;
-    user-select: none;
+.logo { 
+  height: 180px; 
+  width: 180px; 
+  user-select: none; 
+  filter: drop-shadow(1px 1px 1px #000000) 
+          drop-shadow(0px 0px 2px #ffffff) 
+          drop-shadow(0px 0px 2px #ffffff); 
 }
-
 
 h2 {
     color: rgba(0, 0, 0, 0.925);
@@ -25,7 +25,6 @@ h2 {
     margin: 20px 0;
     user-select: none;
 }
-
 
 .folhetos-container {
     display: flex;
@@ -185,8 +184,8 @@ hr {
     position: relative;
     width: 100%;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 5px;
+    margin-top: 20px;
 }
 
 .sites a {
@@ -208,6 +207,13 @@ hr {
     height: 350px;
     width: 300px;
     user-select: none;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.maps {
+    border-radius: 5px;
+    border: 1px solid black;
 }
 
 @media (max-width: 768px) {
