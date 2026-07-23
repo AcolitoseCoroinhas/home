@@ -1,40 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-
-        { data: "05-Jul-26", arquivo: "5-jul-26.pdf" },
-        { data: "12-Jul-26", arquivo: "12-jul-26.pdf" },
-        { data: "19-Jul-26", arquivo: "19-jul-26.pdf" },
-        { data: "26-Jul-26", arquivo: "26-jul-26.pdf" },
+        { data: "26-Jul-26", arquivo: "26-jul-26.pdf", ativo: true },
+        { data: "02-Ago-26", arquivo: "02-ago-26.pdf", ativo: false },
+        { data: "09-Ago-26", arquivo: "09-ago-26.pdf", ativo: false },
+        { data: "16-Ago-26", arquivo: "16-ago-26.pdf", ativo: false },
+        { data: "23-Ago-26", arquivo: "23-ago-26.pdf", ativo: false },
+        { data: "30-Ago-26", arquivo: "30-ago-26.pdf", ativo: false },
     ];
 
-    const coresFolhetos = [
-
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-
-    ];
-
-    const coresButtons = [
-
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
-    ];
-
+    const coresButtons = ["rgb(89, 206, 10)"];
     const container = document.getElementById("folhetosContainer");
 
     folhetos.forEach((folheto, index) => {
         const div = document.createElement("div");
         div.classList.add("div-folhetos");
-        const corDoButton = coresButtons[index % coresFolhetos.length];
+        
+        const estaAtivo = folheto.ativo;
+        
+        const corDoButton = estaAtivo ? coresButtons[index % coresButtons.length] : "gray";
+        const disabledAttr = estaAtivo ? "" : "disabled";
+        const linkHref = estaAtivo ? `folhetos/${folheto.arquivo}` : "javascript:void(0)";
+        const pointerEvents = estaAtivo ? "" : "pointer-events: none; opacity: 0.6;";
+
         div.innerHTML = `
             <h1 class="text-folhetos">${folheto.data}</h1>
-            <a href="folhetos/${folheto.arquivo}" target="_blank">
-                <button class="button-folhetos" style="background-color: ${corDoButton};">Baixar</button>
+            <a href="${linkHref}" target="${estaAtivo ? "_blank" : "_self"}" style="${pointerEvents}">
+                <button class="button-folhetos" style="background-color: ${corDoButton}; cursor: ${estaAtivo ? "pointer" : "not-allowed"};" ${disabledAttr}>
+                    ${estaAtivo ? "Baixar" : "Indisponível"}
+                </button>
             </a>
         `;
         container.appendChild(div);
