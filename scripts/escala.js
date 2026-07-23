@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
+    
     const escalas = [
-        { nome: "JULHO", arquivo: "escalas/Escaladejulho.jpg" }
+        { nome: "JULHO", arquivo: "escalas/Escaladejulho.jpg", ativo: true },
+        { nome: "AGOSTO", arquivo: "", ativo: false }
     ];
 
     const container = document.getElementById("escalasContainer");
@@ -9,12 +11,19 @@ document.addEventListener("DOMContentLoaded", () => {
         const div = document.createElement("div");
         div.classList.add("div-escala");
 
-        const link = escala.arquivo || "";
+        const estaHabilitado = escala.ativo && escala.arquivo !== "";
+        
+        const disabledAttr = estaHabilitado ? "" : "disabled";
+        const linkHref = estaHabilitado ? escala.arquivo : "javascript:void(0)";
+        const cursorStyle = estaHabilitado ? "pointer" : "not-allowed";
+        const opacityStyle = estaHabilitado ? "1" : "0.6";
 
         div.innerHTML = `
             <h1 class="text-escala">${escala.nome}</h1>
-            <a href="${link}" target="_blank">
-                <button class="button-escala">Baixar</button>
+            <a href="${linkHref}" target="${estaHabilitado ? "_blank" : "_self"}" style="text-decoration: none; ${estaHabilitado ? "" : "pointer-events: none;"}">
+                <button class="button-escala" ${disabledAttr} style="cursor: ${cursorStyle}; opacity: ${opacityStyle};">
+                    ${estaHabilitado ? "Baixar" : "Indisponível"}
+                </button>
             </a>
         `;
 
@@ -22,31 +31,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.querySelector("#escalasContent .content").classList.remove("hidden");
 });
-
-/*
-document.addEventListener("DOMContentLoaded", () => {
-    const escalas = [
-        { nome: "JULHO", arquivo: "" }
-    ];
-
-    const container = document.getElementById("escalasContainer");
-
-    escalas.forEach(escala => {
-        const div = document.createElement("div");
-        div.classList.add("div-escala");
-
-        const disabled = escala.arquivo === "" ? "disabled" : "";
-        const link = escala.arquivo || "#";
-
-        div.innerHTML = `
-            <h1 class="text-escala">${escala.nome}</h1>
-            <a href="${link}">
-                <button class="button-escala" ${disabled}>Baixar</button>
-            </a>
-        `;
-
-        container.appendChild(div);
-    });
-    document.querySelector("#escalasContent .content").classList.remove("hidden");
-});
-*/
