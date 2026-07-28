@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     const escalas = [
-        { nome: "JULHO", arquivo: "escalas/Escaladejulho.jpg", ativo: true },
-        { nome: "AGOSTO", arquivo: "", ativo: false }
+        { nome: "AGOSTO", arquivo: "escalas/EscaladeAgosto.jpg", ativo: true },
+        { nome: "SETEMBRO", arquivo: "", ativo: false },
     ];
 
     const container = document.getElementById("escalasContainer");
