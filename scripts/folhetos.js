@@ -1,17 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-        { data: "02-Ago-26", arquivo: "02-08-26.pdf", ativo: true },
-        { data: "09-Ago-26", arquivo: "09-08-26.pdf", ativo: true },
-        { data: "16-Ago-26", arquivo: "16-08-26.pdf", ativo: true },
-        { data: "23-Ago-26", arquivo: "23-08-26.pdf", ativo: true },
         { data: "30-Ago-26", arquivo: "30-08-26.pdf", ativo: true },
+        { data: "06-Set-26", arquivo: "6-09-26.pdf", ativo: true },
+        { data: "13-Set-26", arquivo: "13-09-26.pdf", ativo: true },
+        { data: "20-Set-26", arquivo: "20-09-26.pdf", ativo: true },
+        { data: "27-Set-26", arquivo: "27-09-26.pdf", ativo: true },
     ];
 
     const coresButtons = [
         "rgb(89, 206, 10)",
         "rgb(89, 206, 10)",
-        "#FFD700",
         "rgb(89, 206, 10)",
         "rgb(89, 206, 10)"
     ];
