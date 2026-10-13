@@ -1,8 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
     
     const escalas = [
-        { nome: "SETEMBRO", arquivo: "escalas/EscaladeSetembroP.A.C.jpg", ativo: true },
-        { nome: "OUTUBRO", arquivo: "", ativo: false },
+        { 
+            nome: "OUTUBRO", 
+            arquivo: "../escalas/Escala de Outubro - Comunidade Santa Gemma - 2026.jpg", 
+            ativo: true 
+        },
     ];
 
     const container = document.getElementById("escalasContainer");
