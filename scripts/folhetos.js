@@ -1,13 +1,21 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-        { data: "18-Out-26", arquivo: "18-10-26.pdf", ativo: true },
-        { data: "25-Out-26", arquivo: "25-10-26.pdf", ativo: true },
+        { data: "25-Out-26", arquivo: "25-Out-26.pdf", ativo: true },
+        { data: "01-Nov-26", arquivo: "1-Nov-26.pdf", ativo: true },
+        { data: "02-Nov-26", arquivo: "2-Nov-26.pdf", ativo: true },
+        { data: "08-Nov-26", arquivo: "8-Nov-26.pdf", ativo: true },
+        { data: "15-Nov-26", arquivo: "15-Nov-26.pdf", ativo: true },
+        { data: "22-Nov-26", arquivo: "22-Nov-26.pdf", ativo: true },
     ];
 
     const coresButtons = [
         "rgb(89, 206, 10)",
+        "#FFD700",
+        "rgb(203, 44, 235)",
         "rgb(89, 206, 10)",
+        "rgb(89, 206, 10)",
+        "#FFD700",
     ];
     const container = document.getElementById("folhetosContainer");
 
