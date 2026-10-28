@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-        { data: "25-Out-26", arquivo: "25-Out-26.pdf", ativo: true },
         { data: "01-Nov-26", arquivo: "1-Nov-26.pdf", ativo: true },
         { data: "02-Nov-26", arquivo: "2-Nov-26.pdf", ativo: true },
         { data: "08-Nov-26", arquivo: "8-Nov-26.pdf", ativo: true },
@@ -10,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     const coresButtons = [
-        "rgb(89, 206, 10)",
         "#FFD700",
         "rgb(203, 44, 235)",
         "rgb(89, 206, 10)",
