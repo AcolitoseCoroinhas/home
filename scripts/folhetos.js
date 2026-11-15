@@ -1,18 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
 
     const folhetos = [
-        { data: "01-Nov-26", arquivo: "1-Nov-26.pdf", ativo: true },
-        { data: "02-Nov-26", arquivo: "2-Nov-26.pdf", ativo: true },
-        { data: "08-Nov-26", arquivo: "8-Nov-26.pdf", ativo: true },
         { data: "15-Nov-26", arquivo: "15-Nov-26.pdf", ativo: true },
         { data: "22-Nov-26", arquivo: "22-Nov-26.pdf", ativo: true },
+        { data: "29-Nov-26", arquivo: "29-Nov-26.pdf", ativo: true },
+        { data: "06-Dez-26", arquivo: "06-Dez-26.pdf", ativo: true },
+        { data: "13-Dez-26", arquivo: "13-Dez-26.pdf", ativo: true },
+        { data: "20-Dez-26", arquivo: "20-Dez-26.pdf", ativo: true },
+        { data: "24-Dez-26", arquivo: "24-Dez-26.pdf", ativo: true },
+        { data: "25-Dez-26", arquivo: "25-Dez-26.pdf", ativo: true },
+        { data: "27-Dez-26", arquivo: "27-Dez-26.pdf", ativo: true },
     ];
 
     const coresButtons = [
+        "rgb(89, 206, 10)",
         "#FFD700",
-        "rgb(203, 44, 235)",
-        "rgb(89, 206, 10)",
-        "rgb(89, 206, 10)",
+        "rgb(174, 10, 224)",
+        "rgb(174, 10, 224)",
+        "rgb(245, 65, 200)",
+        "rgb(174, 10, 224)",
+        "#FFD700",
+        "#FFD700",
         "#FFD700",
     ];
     const container = document.getElementById("folhetosContainer");
