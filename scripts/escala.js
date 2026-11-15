@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
             arquivo: "../escalas/Escala de Novembro - Comunidade Santa Gemma - 2026.jpg", 
             ativo: true 
         },
+        { 
+            nome: "DEZEMBRO", 
+            arquivo: "", 
+            ativo: false 
+        },
     ];
 
     const container = document.getElementById("escalasContainer");
